@@ -449,9 +449,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#bildungsenthalpie" class="md-nav__link">
+  <a href="#standardreaktionsenthalpie" class="md-nav__link">
     <span class="md-ellipsis">
-      Bildungsenthalpie
+      Standardreaktionsenthalpie
     </span>
   </a>
   
@@ -769,9 +769,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#bildungsenthalpie" class="md-nav__link">
+  <a href="#standardreaktionsenthalpie" class="md-nav__link">
     <span class="md-ellipsis">
-      Bildungsenthalpie
+      Standardreaktionsenthalpie
     </span>
   </a>
   
@@ -827,7 +827,6 @@
 <th><strong>Systemart</strong></th>
 <th><strong>Stoffaustausch</strong></th>
 <th><strong>Energieaustausch</strong></th>
-<th></th>
 </tr>
 </thead>
 <tbody>
@@ -835,19 +834,16 @@
 <td><strong>Offen</strong></td>
 <td>Ja</td>
 <td>Ja</td>
-<td></td>
 </tr>
 <tr>
 <td><strong>Geschlossen</strong></td>
 <td>Nein</td>
 <td>Ja</td>
-<td></td>
 </tr>
 <tr>
 <td><strong>Isoliert</strong></td>
 <td>Nein</td>
 <td>Nein</td>
-<td></td>
 </tr>
 </tbody>
 </table>
@@ -915,20 +911,18 @@ $$
 <p>Thermische Energie, welche übertragen wird. Dabei gilt <span class="arithmatex">\(\Delta T=T_{Ende}-T_{Anfang}\)</span>.
  Ist die Endtemperatur kleiner als die Anfangstemperatur, ist <span class="arithmatex">\(\Delta T&lt;0\)</span> und <span class="arithmatex">\(Q_{R}\)</span> negativ.</p>
 </div>
-<details class="inline example">
-<summary>  Beispielrechnung</summary>
-</details>
+<details class="example">
+<summary> Beispielrechnung</summary>
 <p><span class="arithmatex">\(\Delta T=7,24°C=7,24 \space K\)</span>
-<span class="arithmatex">\(m_{w}=0,1 \space kg\)</span></p>
-<blockquote>
-<div class="arithmatex">\[
+<span class="arithmatex">\(m_{w}=0,1 \space kg\)</span>
+$$
 \begin{align}
-Q&amp;=c \cdot m \cdot \Delta T \\
-&amp;=4,18 \frac{kJ}{kg \space \cdot \space K} \space \cdot \space 0,1 \space kg \space \cdot \space 7,24 \space K   \\
-&amp;\approx 3,03 \space kJ
-\end{align}
-\]</div>
-</blockquote>
+ Q&amp;=c \cdot m \cdot \Delta T \
+ &amp;=4,18 \frac{kJ}{kg \space \cdot \space K} \space \cdot \space 0,1 \space kg \space \cdot \space 7,24 \space K   \
+ &amp;\approx 3,03 \space kJ
+ \end{align}
+ $$</p>
+</details>
 <h2 id="warmekapazitat-des-kalorimeters">Wärmekapazität des Kalorimeters</h2>
 <div class="admonition caution">
 <p class="admonition-title">Das Problem</p>
@@ -942,8 +936,8 @@ Q&amp;=c \cdot m \cdot \Delta T \\
 C_{K}=c_{w} \cdot \left( \frac{m_{2} \cdot T_{2} -T_{misch}}{T_{misch}-T_{1}}-m_{1} \right)
 \]</div>
 </div>
-<details class="inline info">
-<summary>  Herleitung der Wärmekapazität <span class="arithmatex">\(C_K\)</span> eines Kalorimeters</summary>
+<details class="info">
+<summary> Herleitung der Wärmekapazität <span class="arithmatex">\(C_K\)</span> eines Kalorimeters</summary>
 <h3 id="durchfuhrung">Durchführung</h3>
 <ol>
 <li>Hinzugeben von 40 g Wasser mit (Raum-)Temperatur <span class="arithmatex">\(T_{1}\)</span> und Masse <span class="arithmatex">\(m_{1}=40 \space g\)</span></li>
@@ -962,13 +956,11 @@ $$
  \begin{align}
 Q_{gesamt} &amp;= Q_{1} + Q_{2}=0 \
 &amp;= ((C_{K}+c_{w} \cdot m_{1}) \cdot \Delta T_{1}) + (c_{w} \cdot m_{2}\cdot \Delta T_{2}) \
-&amp;=0</p>
-</details>
-<p>\end{align}</p>
-<blockquote>
-<p>$$
+&amp;=0
+\end{align}
+$$
 Dies lässt sich dann nach <span class="arithmatex">\(C_K\)</span> umformen, um die oben genannte Formel zu erhalten.</p>
-</blockquote>
+</details>
 <hr />
 <h2 id="enthalpien">Enthalpien</h2>
 <h3 id="satz-von-hess">Satz von Hess</h3>
@@ -990,32 +982,36 @@ $$
 <span class="arithmatex">\([\Delta_{r}H_{m}]=1 \space \frac{J}{mol}\)</span></p>
 </div>
 <h3 id="neutralisationsenthalpie">Neutralisationsenthalpie</h3>
-<p>Beispiel Schwefelsäure:
-$$
-H_2SO_{4} + 2NaOH \to {2}H_{2}O+Na_{2}SO_{4}
-$$</p>
 <div class="admonition caution">
 <p class="admonition-title">Anzahlen</p>
 <p>Es geht nicht darum, wie viele Teilchen vorhanden sind, sondern wie oft die Reaktion abläuft.</p>
 </div>
-<p>Die Neutralisation <span class="arithmatex">\(H^+ + OH^- \to H_{2}O\)</span> läuft pro <span class="arithmatex">\(H_{2}SO_{4}\)</span> Molekül 2-mal ab, da zwei Protonen reagieren.</p>
+<details class="example">
+<summary> Beispiel Schwefelsäure</summary>
+<p>$$
+H_2SO_{4} + 2NaOH \to {2}H_{2}O+Na_{2}SO_{4}
+$$
+Die Neutralisation <span class="arithmatex">\(H^+ + OH^- \to H_{2}O\)</span> läuft pro <span class="arithmatex">\(H_{2}SO_{4}\)</span> Molekül 2-mal ab, da zwei Protonen reagieren.</p>
+</details>
 <h3 id="losungsenthalpie">Lösungsenthalpie</h3>
-<div class="arithmatex">\[
-\Delta _{L}H=\Delta_{H}H-\Delta_{G}H
-\]</div>
-<ul>
-<li>Hydratationsenthalpie <span class="arithmatex">\(\Delta_{H}H\)</span>: Freigesetzte Energie beim Bilden der Hydrathülle</li>
-<li>Gitterenthalpie <span class="arithmatex">\(\Delta_{G}H\)</span>: Benötigte Energie zum Herauslösen der Ionen aus dem Gitter</li>
-</ul>
+<blockquote>
+<p>[!INFO]
+$$
+\Delta <em>{L}H=\Delta</em>{H}H-\Delta_{G}H
+$$
+- Hydratationsenthalpie <span class="arithmatex">\(\Delta_{H}H\)</span>: Freigesetzte Energie beim Bilden der Hydrathülle
+- Gitterenthalpie <span class="arithmatex">\(\Delta_{G}H\)</span>: Benötigte Energie zum Herauslösen der Ionen aus dem Gitter</p>
+</blockquote>
 <p><img alt="Enthalpiediagramm endotherm" src="../../media/media_1.svg" /></p>
-<h3 id="bildungsenthalpie">Bildungsenthalpie</h3>
-<div class="arithmatex">\[
+<h3 id="standardreaktionsenthalpie">Standardreaktionsenthalpie</h3>
+<div class="admonition info">
+<p class="admonition-title">Standardreaktionsenthalpie</p>
+<p>$$
 \Delta_{r}H^0_{m}=\sum \big( n_{Produkt} \cdot \Delta_{f}H^0_{m, Produkt}\big) - \sum \big( n_{Edukt} \cdot \Delta_{f}H^0_{m, Edukt}\big)
-\]</div>
-<ul>
-<li>Stöchiometrische Faktoren <span class="arithmatex">\(n\)</span>, werden der Reaktionsgleichung entnommen</li>
-<li>Molare Standardbildungsenthalpien <span class="arithmatex">\(\Delta_{f}H^0_{m}\)</span>, aus der Formelsammlung</li>
-</ul>
+$$
+- Stöchiometrische Faktoren <span class="arithmatex">\(n\)</span>, werden der Reaktionsgleichung entnommen
+- Molare Standardbildungsenthalpien <span class="arithmatex">\(\Delta_{f}H^0_{m}\)</span>, aus der Formelsammlung</p>
+</div>
 <hr />
 <h2 id="entropie">Entropie</h2>
 <div class="admonition tip">
@@ -1034,12 +1030,15 @@ $$</p>
 - Schmelzen, Verdampfen
 - Zunahme der Teilchenanzahl
 - Entstehung von Lösungen aus Feststoffen</p>
+<div class="admonition info">
+<p class="admonition-title">Entropieänderung</p>
 <p>Ähnlich wie bei der Bildungsenthalpie gilt:
 $$
 \Delta_{r}S^0_{m}=\sum \big( n_{Produkt} \cdot S^0_{m, Produkt}\big) - \sum \big( n_{Edukt} \cdot S^0_{m, Edukt}\big)
 $$
 - Stöchiometrische Faktoren <span class="arithmatex">\(n\)</span>, werden der Reaktionsgleichung entnommen
 - Molare Standardentropie <span class="arithmatex">\(S^0_{m}\)</span>, aus der Formelsammlung</p>
+</div>
 <hr />
 <h2 id="gibbs-helmholtz-gleichung">Gibbs-Helmholtz-Gleichung</h2>
 <div class="arithmatex">\[
