@@ -57,7 +57,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -511,6 +520,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Gibbs-Helmholtz-Gleichung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#falle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fälle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fälle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immer-endergonisch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immer endergonisch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#immer-exergonisch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immer exergonisch
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -864,6 +912,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Gibbs-Helmholtz-Gleichung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#falle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fälle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fälle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immer-endergonisch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immer endergonisch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#immer-exergonisch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immer exergonisch
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -951,7 +1038,7 @@
 <hr />
 <h2 id="kalorimeter">Kalorimeter</h2>
 <h3 id="aufbau">Aufbau</h3>
-<p><img alt="Kalorimeter" src="../../media/media_0.svg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Kalorimeter" src="../../media/media_0.svg" /></a></p>
 <h3 id="auswertung">Auswertung</h3>
 <div class="admonition tip">
 <p class="admonition-title">Spezifische Wärmekapazität  <span class="arithmatex">\(c\)</span></p>
@@ -991,9 +1078,11 @@ $$
 </details>
 <h2 id="warmekapazitat-des-kalorimeters">Wärmekapazität des Kalorimeters</h2>
 <h3 id="das-problem">Das Problem</h3>
-<p>Gemessene Temperaturen sind niedriger als erwartet, da nicht nur das Gemisch, sondern auch das Gefäß Wärme aufnimmt. Man kann diesen Messfehler verringern, indem man:
-- Mit größeren Mengen und kleineren Thermometern arbeitet
-- Die Wärmekapazität <span class="arithmatex">\(C\)</span> des Kalorimeters berücksichtigen</p>
+<p>Gemessene Temperaturen sind niedriger als erwartet, da nicht nur das Gemisch, sondern auch das Gefäß Wärme aufnimmt. Man kann diesen Messfehler verringern, indem man:</p>
+<ul>
+<li>Mit größeren Mengen und kleineren Thermometern arbeitet</li>
+<li>Die Wärmekapazität <span class="arithmatex">\(C\)</span> des Kalorimeters berücksichtigen</li>
+</ul>
 <h3 id="die-losung">Die Lösung</h3>
 <div class="admonition info">
 <p class="admonition-title">Wärmekapazität <span class="arithmatex">\(C_K\)</span> eines Kalorimeters</p>
@@ -1069,7 +1158,7 @@ Die Neutralisation <span class="arithmatex">\(H^+ + OH^- \to H_{2}O\)</span> lä
 <li>Gitterenthalpie <span class="arithmatex">\(\Delta_{G}H\)</span>: Benötigte Energie zum Herauslösen der Ionen aus dem Gitter</li>
 </ul>
 </div>
-<p><img alt="Enthalpiediagramm endotherm" src="../../media/media_1.svg" /></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Enthalpiediagramm endotherm" src="../../media/media_1.svg" /></a></p>
 <h3 id="standardreaktionsenthalpie">Standardreaktionsenthalpie</h3>
 <div class="admonition info">
 <p class="admonition-title">Standardreaktionsenthalpie</p>
@@ -1138,6 +1227,11 @@ $$</p>
 </tr>
 </tbody>
 </table>
+<h3 id="falle">Fälle</h3>
+<h4 id="immer-endergonisch">Immer endergonisch</h4>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Immer endergonisch" src="../../media/media_2.svg" /></a></p>
+<h4 id="immer-exergonisch">Immer exergonisch</h4>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Immer exergonisch" src="../../media/media_3.svg" /></a></p>
 
 
 
@@ -1198,5 +1292,19 @@ $$</p>
         <script src="../../assets/external/unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
+    try {
+        var img = element.querySelector('img');
+        if (img && img.src) {
+            element.setAttribute('href', img.src);
+        } else {
+            console.log('No img element with src attribute found');
+        }
+    } catch (error) {
+        console.log('Error:', error);
+    }
+});
+const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
