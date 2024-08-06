@@ -520,6 +520,36 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Gibbs-Helmholtz-Gleichung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#falle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fälle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fälle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fall-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fall 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -873,6 +903,36 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Gibbs-Helmholtz-Gleichung">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#falle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fälle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fälle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fall-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fall 1
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1083,7 +1143,7 @@ Die Neutralisation <span class="arithmatex">\(H^+ + OH^- \to H_{2}O\)</span> lä
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Enthalpiediagramm endotherm" src="../../media/media_1.svg" /></a></p>
 <h3 id="standardreaktionsenthalpie">Standardreaktionsenthalpie</h3>
 <div class="admonition info">
-<p class="admonition-title">Standardreaktionsenthalpie</p>
+<p class="admonition-title">Molare Standardreaktionsenthalpie</p>
 <div class="arithmatex">\[
 \Delta_{r}H^0_{m}=\sum \big( n_{Produkt} \cdot \Delta_{f}H^0_{m, Produkt}\big) - \sum \big( n_{Edukt} \cdot \Delta_{f}H^0_{m, Edukt}\big)
 \]</div>
@@ -1113,7 +1173,7 @@ Die Neutralisation <span class="arithmatex">\(H^+ + OH^- \to H_{2}O\)</span> lä
 <li>Entstehung von Lösungen aus Feststoffen</li>
 </ul>
 <div class="admonition info">
-<p class="admonition-title">Entropieänderung</p>
+<p class="admonition-title">Molare Entropieänderung</p>
 <p>Ähnlich wie bei der Bildungsenthalpie gilt:
 $$
 \Delta_{r}S^0_{m}=\sum \big( n_{Produkt} \cdot S^0_{m, Produkt}\big) - \sum \big( n_{Edukt} \cdot S^0_{m, Edukt}\big)
@@ -1126,8 +1186,17 @@ $$</p>
 <hr />
 <h2 id="gibbs-helmholtz-gleichung">Gibbs-Helmholtz-Gleichung</h2>
 <div class="arithmatex">\[
-\Delta_{r}G=\Delta _{r}H-T \cdot \Delta_{r}S
+\Delta_{r}G^0_{m}=\Delta _{r}H^0_{m}-T \cdot \Delta_{r}S^0_{m}
 \]</div>
+<div class="admonition tip">
+<p class="admonition-title">Molare freie Reaktionsenthalpie</p>
+<div class="arithmatex">\[
+[\Delta_{r}G]=1 \space \frac{kJ}{mol}
+\]</div>
+<ul>
+<li>Abschätzung der Selbstständigkeit von Prozessen</li>
+</ul>
+</div>
 <table>
 <thead>
 <tr>
@@ -1146,6 +1215,127 @@ $$</p>
 <td><span class="arithmatex">\(\Delta_{r}G&gt;0\)</span></td>
 <td>Endergonischer</td>
 <td>Nicht selbstständig</td>
+</tr>
+</tbody>
+</table>
+<h3 id="falle">Fälle</h3>
+<ul>
+<li>Blau: Enthalpie <span class="arithmatex">\(\Delta _{r}H\)</span></li>
+<li>Rot: Negatives Produkt aus Entropie und Temperatur <span class="arithmatex">\(-T\cdot\Delta _{r}S\)</span></li>
+<li>Grün: Freie Reaktionsenthalpie <span class="arithmatex">\(\Delta_{r}G\)</span></li>
+</ul>
+<h4 id="fall-1">Fall 1</h4>
+<table>
+<thead>
+<tr>
+<th>Enthalpie</th>
+<th>Entropie</th>
+<th>Vorgang</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\Delta _{r}H&lt;0\)</span></td>
+<td><span class="arithmatex">\(\Delta _{r}S&gt;0\)</span></td>
+<td>Immer exergonisch</td>
+<td>Verbrennung Kohlenwasserstoffe</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fall 1" src="../../media/media_2.svg" /></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>#### Fall 2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Enthalpie</td>
+<td>Entropie</td>
+<td>Vorgang</td>
+<td>Beispiel</td>
+</tr>
+<tr>
+<td>----------------</td>
+<td>----------------</td>
+<td>------------------</td>
+<td>-----------</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\Delta _{r}H&gt;0\)</span></td>
+<td><span class="arithmatex">\(\Delta _{r}S&lt;0\)</span></td>
+<td>Immer endergonisch</td>
+<td>Ozonbildung</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fall 2" src="../../media/media_3.svg" /></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>#### Fall 3</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Enthalpie</td>
+<td>Entropie</td>
+<td>Vorgang</td>
+<td>Beispiel</td>
+</tr>
+<tr>
+<td>----------------</td>
+<td>----------------</td>
+<td>------------------------------------</td>
+<td>--------------</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\Delta _{r}H&lt;0\)</span></td>
+<td><span class="arithmatex">\(\Delta _{r}S&lt;0\)</span></td>
+<td>Für <span class="arithmatex">\(T&lt;T_{\text{Grenz}}\)</span> exergonisch</td>
+<td>Wassersynthese</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fall 3" src="../../media/media_4.svg" /></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>#### Fall 4</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Enthalpie</td>
+<td>Entropie</td>
+<td>Vorgang</td>
+<td>Beispiel</td>
+</tr>
+<tr>
+<td>----------------</td>
+<td>----------------</td>
+<td>------------------------------------</td>
+<td>--------------------</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\Delta _{r}H&gt;0\)</span></td>
+<td><span class="arithmatex">\(\Delta _{r}S&gt;0\)</span></td>
+<td>Für <span class="arithmatex">\(T&gt;T_{\text{Grenz}}\)</span> exergonisch</td>
+<td>"Wassergas"-Synthese</td>
+</tr>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fall 4" src="../../media/media_5.svg" /></a></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
