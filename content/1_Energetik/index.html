@@ -42,8 +42,6 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/external/unpkg.com/katex@0/dist/katex.min.css">
-    
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
@@ -1112,9 +1110,9 @@
 <h3 id="auswertung">Auswertung</h3>
 <div class="admonition tip">
 <p class="admonition-title">Spezifische Wärmekapazität  <span class="arithmatex">\(c\)</span></p>
-<div class="arithmatex">\[
+<pre class="arithmatex">\[
 [c]=1 \space \frac{J}{g \space \cdot \space K}
-\]</div>
+\]</pre>
 <p>Ein Liter beziehungsweise <span class="arithmatex">\(1 \space kg\)</span> Wasser nimmt <span class="arithmatex">\(4,18 \space kJ\)</span> Energie auf, um seine Temperatur um <span class="arithmatex">\(1 \space K\)</span> zu erhöhen
 <span class="arithmatex">\(c_{w}=4,18 \frac{J}{g \space \cdot \space K}=4,18 \frac{kJ}{kg \space \cdot \space K}\)</span></p>
 </div>
@@ -1138,13 +1136,13 @@ $$
 <summary> Beispielrechnung</summary>
 <p><span class="arithmatex">\(\Delta T=7,24°C=7,24 \space K\)</span>
 <span class="arithmatex">\(m_{w}=0,1 \space kg\)</span></p>
-<div class="arithmatex">\[
+<pre class="arithmatex">\[
 \begin{align}
 Q&amp;=c \cdot m \cdot \Delta T \\
 &amp;=4,18 \frac{kJ}{kg \space \cdot \space K} \space \cdot \space 0,1 \space kg \space \cdot \space 7,24 \space K \\
 &amp;\approx 3,03 \space kJ
 \end{align}
- \]</div>
+ \]</pre>
 </details>
 <h2 id="warmekapazitat-des-kalorimeters">Wärmekapazität des Kalorimeters</h2>
 <h3 id="das-problem">Das Problem</h3>
@@ -1156,9 +1154,9 @@ Q&amp;=c \cdot m \cdot \Delta T \\
 <h3 id="die-losung">Die Lösung</h3>
 <div class="admonition info">
 <p class="admonition-title">Wärmekapazität <span class="arithmatex">\(C_K\)</span> eines Kalorimeters</p>
-<div class="arithmatex">\[
+<pre class="arithmatex">\[
 C_{K}=c_{w} \cdot \left( \frac{m_{2} \cdot T_{2} -T_{misch}}{T_{misch}-T_{1}}-m_{1} \right)
-\]</div>
+\]</pre>
 </div>
 <details class="info">
 <summary> Herleitung <span class="arithmatex">\(C_K\)</span></summary>
@@ -1221,9 +1219,9 @@ Die Neutralisation <span class="arithmatex">\(H^+ + OH^- \to H_{2}O\)</span> lä
 <h3 id="losungsenthalpie">Lösungsenthalpie</h3>
 <div class="admonition info">
 <p class="admonition-title">Lösungsenthalpie</p>
-<div class="arithmatex">\[
+<pre class="arithmatex">\[
 \Delta_{L}H=\Delta_{H}H-\Delta_{G}H
-\]</div>
+\]</pre>
 <ul>
 <li>Hydratationsenthalpie <span class="arithmatex">\(\Delta_{H}H\)</span>: Freigesetzte Energie beim Bilden der Hydrathülle</li>
 <li>Gitterenthalpie <span class="arithmatex">\(\Delta_{G}H\)</span>: Benötigte Energie zum Herauslösen der Ionen aus dem Gitter</li>
@@ -1233,9 +1231,9 @@ Die Neutralisation <span class="arithmatex">\(H^+ + OH^- \to H_{2}O\)</span> lä
 <h3 id="standardreaktionsenthalpie">Standardreaktionsenthalpie</h3>
 <div class="admonition info">
 <p class="admonition-title">Molare Standardreaktionsenthalpie</p>
-<div class="arithmatex">\[
+<pre class="arithmatex">\[
 \Delta_{r}H^0_{m}=\sum \big( n_{Produkt} \cdot \Delta_{f}H^0_{m, Produkt}\big) - \sum \big( n_{Edukt} \cdot \Delta_{f}H^0_{m, Edukt}\big)
-\]</div>
+\]</pre>
 <ul>
 <li>Stöchiometrische Faktoren <span class="arithmatex">\(n\)</span>, werden der Reaktionsgleichung entnommen</li>
 <li>Molare Standardbildungsenthalpien <span class="arithmatex">\(\Delta_{f}H^0_{m}\)</span>, aus der Formelsammlung</li>
@@ -1244,9 +1242,9 @@ Die Neutralisation <span class="arithmatex">\(H^+ + OH^- \to H_{2}O\)</span> lä
 <h2 id="entropie">Entropie</h2>
 <div class="admonition tip">
 <p class="admonition-title">Entropie</p>
-<div class="arithmatex">\[
+<pre class="arithmatex">\[
 [S]=1 \space \frac{J}{K}
-\]</div>
+\]</pre>
 <ul>
 <li>Maß für Unordnung in einem System</li>
 <li>Je größer die Unordnung desto größer die Entropie</li>
@@ -1280,14 +1278,14 @@ $$</p>
 </ul>
 <hr />
 <h2 id="gibbs-helmholtz-gleichung">Gibbs-Helmholtz-Gleichung</h2>
-<div class="arithmatex">\[
+<pre class="arithmatex">\[
 \Delta_{r}G^0_{m}=\Delta _{r}H^0_{m}-T \cdot \Delta_{r}S^0_{m}
-\]</div>
+\]</pre>
 <div class="admonition tip">
 <p class="admonition-title">Molare freie Reaktionsenthalpie</p>
-<div class="arithmatex">\[
+<pre class="arithmatex">\[
 [\Delta_{r}G]=1 \space \frac{kJ}{mol}
-\]</div>
+\]</pre>
 <ul>
 <li>Abschätzung der Selbstständigkeit von Prozessen</li>
 </ul>
@@ -1325,12 +1323,12 @@ $$</p>
 <li>Bei der Grenztemperatur <span class="arithmatex">\(T&gt;T_{\text{Grenz}}\)</span> wechselt ein Prozess von exergonisch zu endergonisch oder umgekehrt</li>
 <li>Bei <span class="arithmatex">\(T=T_{\text{Grenz}}\)</span> gilt <span class="arithmatex">\(\Delta_{r}G=0\)</span>, also Schnittpunkt mit <span class="arithmatex">\(x\)</span>-Achse des Graphen</li>
 </ul>
-<div class="arithmatex">\[
+<pre class="arithmatex">\[
 \begin{align}
 \Delta_{r}G &amp;=\Delta _{r}H-T_{\text{Grenz}}\cdot\Delta _{r}S=0 \\
 &amp;\Leftrightarrow T_{\text{Grenz}} = \frac{\Delta_{r}H}{\Delta_{r}S}
 \end{align}
-\]</div>
+\]</pre>
 </div>
 <h4 id="fall-1">Fall 1</h4>
 <table>
@@ -1463,11 +1461,9 @@ $$</p>
     
       <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
-        <script src="../../javascripts/katex.js"></script>
+        <script src="../../javascripts/mathjax.js"></script>
       
-        <script src="../../assets/external/unpkg.com/katex@0/dist/katex.min.js"></script>
-      
-        <script src="../../assets/external/unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+        <script src="../../assets/external/unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
         <script src="../../assets/external/unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
       
