@@ -466,7 +466,7 @@
 
 <h1 id="tests">Tests</h1>
 <h2 id="info">Info</h2>
-<p>Website build 05:45PM on October 23, 2024</p>
+<p>Website build 05:47PM on October 23, 2024</p>
 <style>
   .katex-version {display: none;}
   .katex-version::after {content:"0.10.2 or earlier";}
@@ -668,24 +668,10 @@ The collapsed section's content goes here
       
         <script src="../javascripts/mathjax.js"></script>
       
-        <script src="../assets/external/unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
-      
-        <script src="../assets/external/unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
-  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
-    try {
-        var img = element.querySelector('img');
-        if (img && img.src) {
-            element.setAttribute('href', img.src);
-        } else {
-            console.log('No img element with src attribute found');
-        }
-    } catch (error) {
-        console.log('Error:', error);
-    }
-});
-const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>
