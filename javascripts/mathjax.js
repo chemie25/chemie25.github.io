@@ -1,8 +1,8 @@
 window.MathJax = {
-  loader: {load: ['[tex]/mhchem', '[tex]/chemfig', '[tex]/color']},
+  loader: {load: ['[tex]/mhchem', '[tex]/color']},
   
   tex: {
-    packages: {'[+]': ['mhchem', 'chemfig', 'color']},
+    packages: {'[+]': ['mhchem', 'color']},
 
     inlineMath: [["\\(", "\\)"]],
     displayMath: [["\\[", "\\]"]],
