@@ -42,7 +42,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/external/unpkg.com/katex@0/dist/katex.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
@@ -722,7 +722,7 @@
 
 <h1 id="6-organische-chemie">6. Organische Chemie</h1>
 <h2 id="homologe-reihe-der-alkane">Homologe Reihe der Alkane</h2>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alkane" src="../../media/molecules/Alkane.svg" /></a></p>
+<p><a class="glightbox" href="../../media/molecules/Alkane.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alkane" src="../../media/molecules/Alkane.svg" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Summenformel von Alkanen</p>
 <div class="arithmatex">\[
@@ -746,7 +746,7 @@
 <details class="example">
 <summary> Beispiel Isomere</summary>
 <p>Beide haben die gleiche Summenformel <span class="arithmatex">\(\ce{C4H10}\)</span>
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Isomere" src="../../media/molecules/Isomere.svg" /></a></p>
+<a class="glightbox" href="../../media/molecules/Isomere.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Isomere" src="../../media/molecules/Isomere.svg" /></a></p>
 </details>
 <h2 id="wechselwirkungen">Wechselwirkungen</h2>
 <h3 id="london-krafte-van-der-waals-kraft">London Kräfte (Van-der-Waals-Kraft)</h3>
@@ -772,7 +772,7 @@
 <p>Bei diesem Mechanismus wird ein elektrophiles Teilchen an z.B. die <span class="arithmatex">\(\ce{C=C}\)</span> Doppelbindung eines Alken-Moleküls hinzugefügt. </p>
 </div>
 <h3 id="1-polarisierung-spaltung">1. Polarisierung + Spaltung</h3>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alkane" src="../../media/molecules/Elektrophile_Addition_1.svg" /></a></p>
+<p><a class="glightbox" href="../../media/molecules/Elektrophile_Addition_1.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alkane" src="../../media/molecules/Elektrophile_Addition_1.svg" /></a></p>
 <ul>
 <li>Brom Molekül (<span class="arithmatex">\(Br_2\)</span>) wird durch elektronenreiche Doppelbindung polarisiert und heterolytisch gespalten: <span class="arithmatex">\(\ce{Br2 -&gt; Br+ + Br-}\)</span></li>
 <li><span class="arithmatex">\(\ce{Br+}\)</span> löst die <span class="arithmatex">\(\ce{C=C}\)</span> Doppelbindung auf</li>
@@ -784,7 +784,7 @@
 $$
 \ce{CH2=CH2 + Br2 -&gt; CH2Br-CH2Br}
 $$
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alkane" src="../../media/molecules/Elektrophile_Addition_2.svg" /></a></li>
+<a class="glightbox" href="../../media/molecules/Elektrophile_Addition_2.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alkane" src="../../media/molecules/Elektrophile_Addition_2.svg" /></a></li>
 </ul>
 <h1 id="weiteres">Weiteres</h1>
 <h3 id="fckw-fluorchlorkohlenwasserstoffe">FCKW Fluorchlorkohlenwasserstoffe</h3>
@@ -803,7 +803,7 @@ $$
 \ce{Cl2} &amp;\xrightarrow[]{\text{Licht}}  \ce{2Cl\cdot}
 \end{align*}
 \]</div>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Molecule" src="../../media/molecules/Molecule.svg" /></a></p>
+<p><a class="glightbox" href="../../media/molecules/Molecule.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Molecule" src="../../media/molecules/Molecule.svg" /></a></p>
 
 
 
@@ -857,28 +857,14 @@ $$
       
         <script src="../../javascripts/katex.js"></script>
       
-        <script src="../../assets/external/unpkg.com/katex@0/dist/katex.min.js"></script>
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       
-        <script src="../../assets/external/unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
-        <script src="../../assets/external/cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/mhchem.min.js"></script>
-      
-        <script src="../../assets/external/unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/mhchem.min.js"></script>
       
     
-  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
-    try {
-        var img = element.querySelector('img');
-        if (img && img.src) {
-            element.setAttribute('href', img.src);
-        } else {
-            console.log('No img element with src attribute found');
-        }
-    } catch (error) {
-        console.log('Error:', error);
-    }
-});
-const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>
