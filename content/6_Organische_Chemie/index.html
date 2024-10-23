@@ -666,7 +666,7 @@
 
 <h1 id="6-organische-chemie">6. Organische Chemie</h1>
 <h2 id="homologe-reihe-der-alkane">Homologe Reihe der Alkane</h2>
-<p><a class="glightbox" href="../../media/molecules/Alkane.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alkane" src="../../media/molecules/Alkane.svg" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Alkane" src="../../media/molecules/Alkane.svg" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Summenformel von Alkanen</p>
 <pre class="arithmatex">\[
@@ -690,7 +690,7 @@ C_{n}H_{2n+2}
 <details class="example">
 <summary> Beispiel Isomere</summary>
 <p>Beide haben die gleiche Summenformel <span class="arithmatex">\(C_{4}H_{10}\)</span>
-<a class="glightbox" href="../../media/molecules/Isomere.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Isomere" src="../../media/molecules/Isomere.svg" /></a></p>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Isomere" src="../../media/molecules/Isomere.svg" /></a></p>
 </details>
 <h2 id="wechselwirkungen">Wechselwirkungen</h2>
 <h3 id="london-krafte-van-der-waals-kraft">London Kräfte (Van-der-Waals-Kraft)</h3>
@@ -724,7 +724,7 @@ Cl_2O_2 &amp;\to Cl_2+O_2 \\
 Cl_2 &amp;\xrightarrow[]{\text{Licht}}  2 \space Cl \space \cdot
 \end{align}
 \]</pre>
-<p><a class="glightbox" href="../../media/molecules/Molecule.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Molecule" src="../../media/molecules/Molecule.svg" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Molecule" src="../../media/molecules/Molecule.svg" /></a></p>
 
 
 
@@ -778,10 +778,24 @@ Cl_2 &amp;\xrightarrow[]{\text{Licht}}  2 \space Cl \space \cdot
       
         <script src="../../javascripts/mathjax.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../assets/external/unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../assets/external/unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
+    try {
+        var img = element.querySelector('img');
+        if (img && img.src) {
+            element.setAttribute('href', img.src);
+        } else {
+            console.log('No img element with src attribute found');
+        }
+    } catch (error) {
+        console.log('Error:', error);
+    }
+});
+const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>

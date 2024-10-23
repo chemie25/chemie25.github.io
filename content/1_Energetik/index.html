@@ -1106,7 +1106,7 @@
 <hr />
 <h2 id="kalorimeter">Kalorimeter</h2>
 <h3 id="aufbau">Aufbau</h3>
-<p><a class="glightbox" href="../../media/media_0.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Kalorimeter" src="../../media/media_0.svg" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Kalorimeter" src="../../media/media_0.svg" /></a></p>
 <h3 id="auswertung">Auswertung</h3>
 <div class="admonition tip">
 <p class="admonition-title">Spezifische Wärmekapazität  <span class="arithmatex">\(c\)</span></p>
@@ -1187,7 +1187,7 @@ Dies lässt sich dann nach <span class="arithmatex">\(C_K\)</span> umformen, um 
 <h2 id="enthalpien">Enthalpien</h2>
 <h3 id="satz-von-hess">Satz von Hess</h3>
 <p>Der Weg einer Reaktion hat <strong>keinen Einfluss</strong> auf die Enthalpie der <strong>Gesamtreaktion</strong>. Dabei ist es egal, ob eine Reaktion als einen Schritt betrachtet oder in mehrere <strong>Teilschritte</strong> unterteilt wird. Dies bildet die Grundlage für die folgenden Formeln.</p>
-<p><a class="glightbox" href="../../media/media_6.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Satz von Hess Diagramm" src="../../media/media_6.svg" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Satz von Hess Diagramm" src="../../media/media_6.svg" /></a></p>
 <div class="admonition tip">
 <p class="admonition-title">Reaktionsenthalpie</p>
 <p>Enthalpieänderung bei chemischer Reaktion
@@ -1227,7 +1227,7 @@ Die Neutralisation <span class="arithmatex">\(H^+ + OH^- \to H_{2}O\)</span> lä
 <li>Gitterenthalpie <span class="arithmatex">\(\Delta_{G}H\)</span>: Benötigte Energie zum Herauslösen der Ionen aus dem Gitter</li>
 </ul>
 </div>
-<p><a class="glightbox" href="../../media/media_1.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Enthalpiediagramm endotherm" src="../../media/media_1.svg" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Enthalpiediagramm endotherm" src="../../media/media_1.svg" /></a></p>
 <h3 id="standardreaktionsenthalpie">Standardreaktionsenthalpie</h3>
 <div class="admonition info">
 <p class="admonition-title">Molare Standardreaktionsenthalpie</p>
@@ -1349,7 +1349,7 @@ $$</p>
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" href="../../media/media_2.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fall 1" src="../../media/media_2.svg" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fall 1" src="../../media/media_2.svg" /></a></p>
 <h4 id="fall-2">Fall 2</h4>
 <table>
 <thead>
@@ -1369,7 +1369,7 @@ $$</p>
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" href="../../media/media_3.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fall 2" src="../../media/media_3.svg" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fall 2" src="../../media/media_3.svg" /></a></p>
 <h4 id="fall-3">Fall 3</h4>
 <table>
 <thead>
@@ -1389,7 +1389,7 @@ $$</p>
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" href="../../media/media_4.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fall 3" src="../../media/media_4.svg" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fall 3" src="../../media/media_4.svg" /></a></p>
 <h4 id="fall-4">Fall 4</h4>
 <table>
 <thead>
@@ -1409,7 +1409,7 @@ $$</p>
 </tr>
 </tbody>
 </table>
-<p><a class="glightbox" href="../../media/media_5.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fall 4" src="../../media/media_5.svg" /></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Fall 4" src="../../media/media_5.svg" /></a></p>
 
 
 
@@ -1463,10 +1463,24 @@ $$</p>
       
         <script src="../../javascripts/mathjax.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../assets/external/unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../assets/external/unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+  <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
+    try {
+        var img = element.querySelector('img');
+        if (img && img.src) {
+            element.setAttribute('href', img.src);
+        } else {
+            console.log('No img element with src attribute found');
+        }
+    } catch (error) {
+        console.log('Error:', error);
+    }
+});
+const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
 </html>
