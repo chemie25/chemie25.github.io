@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg1"
-   width="927.47522"
-   height="639.07227"
-   viewBox="0 0 927.47522 639.07227"
+   width="927.93237"
+   height="639.52942"
+   viewBox="0 0 927.93237 639.52942"
    sodipodi:docname="page7.pdf"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -3450,8 +3450,8 @@
        y="0"
        inkscape:label="1"
        id="page1"
-       width="927.47522"
-       height="639.07227"
+       width="927.93237"
+       height="639.52942"
        margin="0"
        bleed="0" />
   </sodipodi:namedview>
@@ -3459,7 +3459,7 @@
      id="g1"
      inkscape:groupmode="layer"
      inkscape:label="1"
-     transform="translate(-66.684753,-42.080002)">
+     transform="translate(-66.227608,-42.080002)">
     <g
        id="g2" />
     <g
@@ -3497,8 +3497,8 @@
          xml:space="preserve"
          transform="matrix(1.3333333,0,0,1.3333333,65.216,674.496)"
          clip-path="url(#clipPath6)"><tspan
-           style="font-variant:normal;font-weight:normal;font-size:24px;font-family:Roboto;writing-mode:lr-tb;fill:#46b1e1;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           x="0 13.488 19.799999 25.896 40.68 53.903999 66.456001 78.624001 90.935997 103.656 109.488 117.336 130.056 143.304 156.36 169.608 182.976 191.088 196.992 205.32001"
+           style="font-variant:normal;font-weight:normal;font-size:24px;font-family:Roboto;writing-mode:lr-tb;fill:#46b1e1;fill-opacity:1;fill-rule:nonzero;stroke:#46b1e1;stroke-width:0.68571;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           x="0 13.488 19.799999 25.32 39.959999 53.183998 65.639999 77.639999 89.760002 102.24 108 115.68 128.16 141.24001 153.96001 167.03999 180.24001 188.35201 194.03999 202.08"
            y="0"
            sodipodi:role="line"
            id="tspan6">3. Rückseitenangriff</tspan></text>
@@ -3510,8 +3510,8 @@
          xml:space="preserve"
          transform="matrix(1.3333333,0,0,1.3333333,622.4,674.496)"
          clip-path="url(#clipPath7)"><tspan
-           style="font-variant:normal;font-weight:normal;font-size:24px;font-family:Roboto;writing-mode:lr-tb;fill:#46b1e1;fill-opacity:1;fill-rule:nonzero;stroke:none"
-           x="0 13.488 19.799999 25.896 41.040001 49.152 62.832001 76.367996 89.592003 101.76"
+           style="font-variant:normal;font-weight:normal;font-size:24px;font-family:Roboto;writing-mode:lr-tb;fill:#46b1e1;fill-opacity:1;fill-rule:nonzero;stroke:#46b1e1;stroke-width:0.68571;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           x="0 13.488 19.799999 25.32 40.32 48.431999 61.919998 75.239998 88.199997 100.2"
            y="0"
            sodipodi:role="line"
            id="tspan7">4. Produkt</tspan></text>
