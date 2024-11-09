@@ -631,7 +631,7 @@
 
 
 <h1 id="4-saure-base-chemie">4. Säure-Base-Chemie</h1>
-<div class="admonition tip">
+<div class="admonition warning">
 <p class="admonition-title">Ionen</p>
 <p>$$
 \begin{align<em>}
@@ -645,7 +645,7 @@ $$
 <ul>
 <li><strong>Säuren</strong>: Geben Protonen (<span class="arithmatex">\(H^+\)</span>) ab, <strong>Protonendonator</strong><ul>
 <li>Nicht zu verwechseln mit saurer Lösung (<span class="arithmatex">\(\ce{H3O+}\)</span>)</li>
-<li><span class="arithmatex">\(H\)</span>-Atom mit positiver Teilladung</li>
+<li>Leicht abspaltbares <span class="arithmatex">\(H\)</span>-Atom mit positiver Teilladung</li>
 </ul>
 </li>
 <li>
@@ -669,6 +669,14 @@ $$
 </ul>
 </li>
 </ul>
+<p><a class="glightbox" href="../../media/media_13.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Säure-Base-Paare" src="../../media/media_13.svg" /></a></p>
+<div class="admonition info">
+<p class="admonition-title">Autoprotolyse von Wasser</p>
+<p>Diese Ionen entstehen bei Protonenübertragungen von <span class="arithmatex">\(H_{2}O\)</span> (Ampholyt) mit sich selbst (<strong>Autoprotolyse</strong>):
+$$
+\ce{2 H2O(l) \leftrightarrows H3O+(aq)+ OH-(aq)}
+$$</p>
+</div>
 <h2 id="ph-wert">pH-Wert</h2>
 <div class="admonition tip">
 <p class="admonition-title">pH-Wert</p>
@@ -679,7 +687,12 @@ $$
 \end{align*}
 \]</div>
 </div>
-<p><span class="arithmatex">\(pH+pOH=14\)</span>  (bei 25°C)</p>
+<div class="admonition warning">
+<p class="admonition-title">pH und pOH Werte (bei 25°C)</p>
+<div class="arithmatex">\[
+pH+pOH=14
+\]</div>
+</div>
 <h3 id="universalindikator">Universalindikator</h3>
 <p><a class="glightbox" href="../../media/pH.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="pH Skala" src="../../media/pH.png" /></a></p>
 <table>
@@ -712,16 +725,26 @@ $$
 </tr>
 </tbody>
 </table>
-<div class="admonition info">
-<p class="admonition-title">Autoprotolyse von Wasser</p>
-<p>Diese Ionen entstehen bei Protonenübertragungen von <span class="arithmatex">\(H_{2}O\)</span> (Ampholyt) mit sich selbst (<strong>Autoprotolyse</strong>):
-$$
-\ce{2 H2O(l) \leftrightarrows H3O+(aq)+ OH-(aq)}
-$$</p>
-</div>
 <hr />
 <h2 id="saurestarken">Säurestärken</h2>
-<div class="admonition tip">
+<details class="info">
+<summary> Säurekonstante <span class="arithmatex">\(K_S\)</span> / Herleitung <span class="arithmatex">\(pK_S\)</span></summary>
+<div class="arithmatex">\[
+\ce{HAc (aq) + H2O (l) \rightleftarrows H3O+ (aq) + Ac- (aq)}
+$$
+Massenwirkungsgesetz:
+$$
+\begin{align*}
+K_C&amp;=\frac{c(\ce{Ac-}) \cdot c(\ce{H3O+})}{c(\ce{HAc}) \cdot c(\ce{H2O})} \\
+&amp;\Rightarrow K_S = K_C \cdot c(\ce{H2O}) = \frac{c(\ce{Ac-}) \cdot c(\ce{H3O+})}{c(\ce{HAc})}
+\end{align*}
+$$
+Je **größer** der $K_S$-Wert ist, desto **stärker** ist die Säure. Je **kleiner** $pK_S$ ist, desto **stärker** ist die Säure:
+$$
+pK_S=-lg(K_S) \Leftrightarrow  K_S=10^{-pK_S} \frac{mol}{L}
+\]</div>
+</details>
+<div class="admonition warning">
 <p class="admonition-title">Allgemein</p>
 <p>Je <strong>kleiner</strong> <span class="arithmatex">\(pK_s\)</span> bzw. <span class="arithmatex">\(pK_B\)</span>, desto <strong>stärker</strong> ist die Säure bzw. Base.</p>
 </div>
@@ -758,18 +781,33 @@ $$</p>
 <h3 id="berechnungen">Berechnungen</h3>
 <div class="admonition info">
 <p class="admonition-title">Sehr starke Säuren</p>
-<p>Protolysereaktion läuft vollständig ab:
+<p>Protolysereaktion läuft vollständig ab (Beispiel Salzsäure):
 $$
 c(H_3O^+)=c_0(HA)
+$$
+$$
+\ce{HCl (s) + H2O (l) -&gt; H3O+ (aq) + Cl- (aq)}
 $$</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Mittelstarke bis schwache Säuren</p>
 <p>Reaktion läuft unvollständig ab, es entsteht ein <a href="../3_Chemisches_Gleichgewicht">Gleichgewicht</a>
-Näherungsformel:
+Näherungsformel (Beispiel Essigsäure):
 $$
 pH=\frac{1}{2} \cdot (pK_{s} - lg\big(c_0(HA)\big)
+$$
+$$
+\ce{HAc (aq) + H2O (l) \rightleftarrows H3O+ (aq) + Ac- (aq)}
 $$</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Zusammenhänge zwischen Säure- und Basekonstante</p>
+<div class="arithmatex">\[
+K_S \cdot K_B = c(\ce{H3O+}) \cdot c(\ce{OH-}) = 10^{-14} \frac{mol^2}{L^2}
+$$
+$$
+pK_S + pK_B = 14
+\]</div>
 </div>
 <hr />
 <h2 id="titration">Titration</h2>
