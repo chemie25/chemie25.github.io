@@ -440,6 +440,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pufferlosungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pufferlösungen
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -615,6 +624,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pufferlosungen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pufferlösungen
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -675,7 +693,7 @@
 <p class="admonition-title">Autoprotolyse von Wasser</p>
 <p>Diese Ionen entstehen bei Protonenübertragungen von <span class="arithmatex">\(H_{2}O\)</span> (Ampholyt) mit sich selbst (<strong>Autoprotolyse</strong>):
 $$
-\ce{2 H2O(l) \leftrightarrows H3O+(aq)+ OH-(aq)}
+\ce{2 H2O(l) &lt;&lt;=&gt; H3O+(aq)+ OH-(aq)}
 $$</p>
 </div>
 <h2 id="ph-wert">pH-Wert</h2>
@@ -739,11 +757,10 @@ $$
 K_C&amp;=\frac{c(\ce{Ac-}) \cdot c(\ce{H3O+})}{c(\ce{HAc}) \cdot c(\ce{H2O})} \
 &amp;\Rightarrow K_S = K_C \cdot c(\ce{H2O}) = \frac{c(\ce{Ac-}) \cdot c(\ce{H3O+})}{c(\ce{HAc})}
 \end{align</em>}
-$$
-Je <strong>größer</strong> der <span class="arithmatex">\(K_S\)</span>-Wert ist, desto <strong>stärker</strong> ist die Säure. Je <strong>kleiner</strong> <span class="arithmatex">\(pK_S\)</span> ist, desto <strong>stärker</strong> ist die Säure:
-$$
-pK_S=-lg(K_S) \Leftrightarrow  K_S=10^{-pK_S} \frac{mol}{L}
 $$</p>
+<div class="arithmatex">\[
+pK_S=-lg(K_S) \Leftrightarrow  K_S=10^{-pK_S} \frac{mol}{L}
+\]</div>
 </details>
 <div class="admonition warning">
 <p class="admonition-title">Allgemein</p>
@@ -798,7 +815,7 @@ $$
 pH=\frac{1}{2} \cdot (pK_{s} - lg\big(c_0(HA)\big)
 $$
 $$
-\ce{HAc (aq) + H2O (l) \rightleftarrows H3O+ (aq) + Ac- (aq)}
+\ce{HAc (aq) + H2O (l) &lt;&lt;=&gt; H3O+ (aq) + Ac- (aq)}
 $$</p>
 </div>
 <div class="admonition tip">
@@ -816,6 +833,33 @@ pK_S + pK_B = 14
 <li>Konzentration einer <strong>Probelösung</strong> bestimmen</li>
 </ul>
 <h3 id="titrationskurven-auswerten">Titrationskurven auswerten</h3>
+<hr />
+<h2 id="pufferlosungen">Pufferlösungen</h2>
+<ul>
+<li>Konstanter pH-Wert</li>
+<li>Lösungen <strong>schwacher</strong> Säuren / Basen und ihren <strong>korrespondieren</strong> Basen / Säuren</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Essigsäure-Acetat-Puffer</p>
+<div class="arithmatex">\[
+\ce{HAc + H2O &lt;=&gt; Ac^- + H3O+}
+\]</div>
+<div class="arithmatex">\[
+\begin{align*}
+&amp;\text{Zugabe von Säure:} &amp;\ce{H3O+ + Ac- &lt;=&gt;&gt; HAc + H2O} \\
+&amp;\text{Zugabe von Base:}  &amp;\ce{OH- + HAc &lt;=&gt;&gt; Ac- + H2O}
+\end{align*}
+\]</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Henderson-Hasselbach-Gleichung</p>
+<div class="arithmatex">\[
+pH=pKs - lg \frac{c(\ce{Ha})}{c(\ce{A-})}
+\]</div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Herleitung Henderson-Hasselbach-Gleichung</p>
+</div>
 
 
 
