@@ -530,6 +530,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Elektrolyse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zersetzungsspannung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zersetzungsspannung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -798,6 +813,21 @@
       Elektrolyse
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Elektrolyse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zersetzungsspannung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zersetzungsspannung
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1078,11 +1108,34 @@
 &amp;\text{Redox:} &amp;{\ce{Cu^2+(aq) + Zn(s)&lt;=&gt;&gt; Cu(s) + Zn^2+(aq)}} \\
 \end{align*}
 \]</div>
+<ul>
+<li>Unterschiedliche Tendenzen unter Elektronenabgabe in Lösung zu gehen<ul>
+<li>Zink unedler (als Kupfer) <span class="arithmatex">\(\to\)</span> Elektronendonator</li>
+</ul>
+</li>
+<li>Elektronen bleiben in Elektroden</li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">Ionenfluss</p>
 <p>Die Elektronen (<span class="arithmatex">\(\color{#0070c0}\ce{e-}\)</span>) bewegen sich von links nach rechts. Daher müssen sich negative Ladungen (Nitrat <span class="arithmatex">\(\color{#66cc29}\ce{NO3-}\)</span>) nach links oder/und sich positive (Kalium-Ion Ionen <span class="arithmatex">\(\color{#f7b15a}\ce{K+}\)</span>)  nach rechts bewegen, da ansonsten das entstehende elektrische Potential die Reaktion hemmt.</p>
 </div>
 <h3 id="elektrochemische-doppelschicht">Elektrochemische Doppelschicht</h3>
+<ul>
+<li>Unedleres Metall geht leichter in die Lösung<ul>
+<li>Abgabe von Elektronen <span class="arithmatex">\(\to\)</span> Aufladung der Elektroden</li>
+<li><strong>Elektrisches Potenzial</strong> entsteht</li>
+</ul>
+</li>
+<li><strong>Gleichgewichtsreaktion</strong> bildet sich: <span class="arithmatex">\(\ce{Me (s) &lt;=&gt; Me^z+ (aq) + z e-}\)</span><ul>
+<li>Charakteristisch für ein Metall (<span class="arithmatex">\(\ce{Cu}\)</span>: Eduktseite, <span class="arithmatex">\(\ce{Zn}\)</span>: Produktseite)</li>
+</ul>
+</li>
+</ul>
+<p><a class="glightbox" href="../../media/Doppelschicht.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Doppelschicht" src="../../media/Doppelschicht.png" /></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Konzentration</p>
+<p>Elektrodenpotenziale sind Konzentrationsabhängig!</p>
+</div>
 <hr />
 <h2 id="standardwasserstoff-halbzelle">Standardwasserstoff-Halbzelle</h2>
 <div class="arithmatex">\[
@@ -1118,9 +1171,15 @@ E=E^0(\ce{Ox // Red}) + \frac{0,059 V}{z} \cdot lg \space  \frac{c(\ce{Ox})}{c(\
 <li><span class="arithmatex">\([E]=V\)</span></li>
 </ul>
 </div>
+<details class="tip">
+<summary> Nernstgleichung (volle Form)</summary>
+<div class="arithmatex">\[
+E=E^0+ \frac{R \cdot T}{F \cdot z} \cdot lg \space  \frac{c(\ce{Ox})}{c(\ce{Red})}
+\]</div>
+</details>
 <hr />
 <h2 id="faradaysche-gesetze">Faraday'sche Gesetze</h2>
-<div class="admonition info">
+<div class="admonition tip">
 <p class="admonition-title">Faraday Formel</p>
 <div class="arithmatex">\[
 m=\frac{I\cdot t}{z \cdot F} \cdot M
@@ -1138,10 +1197,27 @@ F=96 \space 485 \space A \cdot s \cdot mol^{-1}
 <hr />
 <h2 id="elektrolyse">Elektrolyse</h2>
 <ul>
-<li>Umkehrung von </li>
+<li><strong>Umkehrung</strong> von Galvanischer Zelle</li>
+<li><strong>Erzwungene</strong> chemische Reaktion</li>
+<li>Spannung wird angelegt</li>
+<li>Redoxreaktionen laufen umgekehrt ab</li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">OPA (nur bei Elektrolyse)</p>
+<p><strong>O</strong>xidation <strong>P</strong>luspol <strong>A</strong>node</p>
+</div>
+<h3 id="zersetzungsspannung">Zersetzungsspannung</h3>
+<div class="admonition info">
+<p class="admonition-title">Zersetzungsspannung <span class="arithmatex">\(U_Z\)</span></p>
+<p>Für Elektrolyse <strong>erforderliche Spannung</strong>
+Spannung die eine <strong>galvanische Zelle</strong> liefern würde (<span class="arithmatex">\(U_Z^0 (\ce{Ox | Red})\)</span>) sowie einer <strong>zusätzlichen Überspannung</strong> <span class="arithmatex">\(U^*\)</span> (in der Praxis).</p>
+<div class="arithmatex">\[
+U_Z=U_Z^0 (\ce{Ox | Red}) + U^*
+\]</div>
+</div>
 <hr />
 <h2 id="brennstoffzelle">Brennstoffzelle</h2>
+<hr />
 <h2 id="korrosion">Korrosion</h2>
 <h3 id="saurekorrosion">Säurekorrosion</h3>
 <ul>
