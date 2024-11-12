@@ -524,6 +524,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#elektrolyse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elektrolyse
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#brennstoffzelle" class="md-nav__link">
     <span class="md-ellipsis">
       Brennstoffzelle
@@ -778,6 +787,15 @@
   <a href="#faradaysche-gesetze" class="md-nav__link">
     <span class="md-ellipsis">
       Faraday'sche Gesetze
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elektrolyse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Elektrolyse
     </span>
   </a>
   
@@ -1067,6 +1085,10 @@
 <h3 id="elektrochemische-doppelschicht">Elektrochemische Doppelschicht</h3>
 <hr />
 <h2 id="standardwasserstoff-halbzelle">Standardwasserstoff-Halbzelle</h2>
+<div class="arithmatex">\[
+\ce{H2 (Pt) &lt;=&gt; 2H+ (aq) + 2e-}
+\]</div>
+<p><a class="glightbox" href="../../media/Standardelektrodenpotentiale.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Standardelektrode" src="../../media/Standardelektrodenpotentiale.png" /></a></p>
 <h2 id="zellspannung-u">Zellspannung <span class="arithmatex">\(U\)</span></h2>
 <div class="admonition tip">
 <p class="admonition-title">Zellspannung berechnen</p>
@@ -1089,8 +1111,12 @@ U(Zn|Zn^{2+} \space || \space Cu^{2+}|Cu)&amp;=E^0(Cu^{2+}|Cu)-E^0(Zn|Zn^{2+}) \
 <div class="admonition tip">
 <p class="admonition-title">Nernstgleichung (vereinfachte Form)</p>
 <div class="arithmatex">\[
-E=E^0 + \frac{0,059 V}{z} \cdot lg \space c(Me^{2+}) \frac{l}{mol}
+E=E^0(\ce{Ox // Red}) + \frac{0,059 V}{z} \cdot lg \space  \frac{c(\ce{Ox})}{c(\ce{Red})}
 \]</div>
+<ul>
+<li><span class="arithmatex">\(z\)</span>: Anzahl der übertragenden Elektronen</li>
+<li><span class="arithmatex">\([E]=V\)</span></li>
+</ul>
 </div>
 <hr />
 <h2 id="faradaysche-gesetze">Faraday'sche Gesetze</h2>
@@ -1110,14 +1136,19 @@ F=96 \space 485 \space A \cdot s \cdot mol^{-1}
 \]</div>
 </div>
 <hr />
+<h2 id="elektrolyse">Elektrolyse</h2>
+<ul>
+<li>Umkehrung von </li>
+</ul>
+<hr />
 <h2 id="brennstoffzelle">Brennstoffzelle</h2>
 <h2 id="korrosion">Korrosion</h2>
 <h3 id="saurekorrosion">Säurekorrosion</h3>
 <ul>
 <li>Oberfläche wird durch <span class="arithmatex">\(Zn^{2+}\)</span>-Ionen geladen</li>
 <li>Hemmt Reduktion der <span class="arithmatex">\(H_{3}O^+\)</span>-Ionen</li>
-<li><strong>Oxidation:</strong> <span class="arithmatex">\(Zn(s) \to Zn^{2+}(aq)+2e^-\)</span></li>
-<li><strong>Reduktion:</strong> <span class="arithmatex">\(2 \space  H_{3}O^+ (aq) + 2e^- \to H_{2}(g)+2 \space H_{2}O (l)\)</span></li>
+<li><strong>Oxidation:</strong> <span class="arithmatex">\(\ce{Zn(s) -&gt; Zn^2+(aq)+2e^-}\)</span></li>
+<li><strong>Reduktion:</strong> <span class="arithmatex">\(\ce{2 H3O^+ (aq) + 2e^- -&gt; H2(g) + 2 H2O (l)}\)</span></li>
 </ul>
 <h3 id="sauerstoffkorrosion">Sauerstoffkorrosion</h3>
 <ul>
