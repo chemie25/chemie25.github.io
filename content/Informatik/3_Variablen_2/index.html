@@ -18,7 +18,7 @@
     
     
       
-        <title>Einstieg - Chemie Abi 2025</title>
+        <title>Variablentypen - Chemie Abi 2025</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#einstieg" class="md-skip">
+        <a href="#variablentypen" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Einstieg
+              Variablentypen
             
           </span>
         </div>
@@ -410,20 +410,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#hello-world" class="md-nav__link">
+  <a href="#strings" class="md-nav__link">
     <span class="md-ellipsis">
-      Hello world
+      Strings
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#kommentare" class="md-nav__link">
+  <a href="#type-finden" class="md-nav__link">
     <span class="md-ellipsis">
-      Kommentare
+      Type finden
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#konvertieren-zwischen-variablentypen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Konvertieren zwischen Variablentypen
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Konvertieren zwischen Variablentypen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problem
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -442,37 +466,116 @@
                   
 
 
-<h1 id="einstieg">Einstieg</h1>
+<h1 id="variablentypen">Variablentypen</h1>
+<h2 id="strings">Strings</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Strings werden mit &quot; &quot; oder &#39; &#39; eingeschlossen</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Hallo&quot;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Bob&#39;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># Verbinden von Strings</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">text</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span> <span class="c1"># -&gt; Hallo Bob</span>
+</span></code></pre></div>
 <table>
 <thead>
 <tr>
-<th>Vorteile</th>
-<th>Nachteile</th>
+<th style="text-align: left;">Variablentyp</th>
+<th style="text-align: left;">Bezeichnung</th>
+<th>Beispiel</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>- Einfache Syntax, Anfängerfreundlich<br>- Breite Anwendungen (Website wurde mit Python generiert, Datenauswertung, ...)<br>- Viele Bibliotheken<br><br></td>
-<td>- Dynamische Typisierung kann zu Fehlern führen<br>- Kopieren von Daten teils komisch (z.B. bei Listen)<br>- Langsam (jedoch z.B. NumPy)<br>- Seltener für Spieleentwicklung (aber auch möglich!)<br><br></td>
+<td style="text-align: left;">Ganze Zahl</td>
+<td style="text-align: left;">Integer</td>
+<td><code>python&lt;br&gt;x = 1 + 1&lt;br&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Kommazahl</td>
+<td style="text-align: left;">Float (Floating point)</td>
+<td><code>python&lt;br&gt;# Punkt statt Komma&lt;br&gt;x = 3.141&lt;br&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Text</td>
+<td style="text-align: left;">String</td>
+<td><code>python&lt;br&gt;name = "Alice"&lt;br&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Ja / Nein</td>
+<td style="text-align: left;">Boolean</td>
+<td><code>python&lt;br&gt;name = "Alice"&lt;br&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">...</td>
+<td style="text-align: left;">...</td>
+<td>...</td>
 </tr>
 </tbody>
 </table>
-<h2 id="hello-world">Hello world</h2>
-<div class="admonition example">
-<p class="admonition-title">Aufgabe</p>
-<p>Schreibe das "Hello World" Programm ab und führe aus, z.B. mit <a href="https://www.online-python.com/">online-python</a>.</p>
-</div>
+<h2 id="type-finden">Type finden</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">type</span><span class="p">(</span><span class="n">eingabe</span><span class="p">)</span> <span class="c1"># -&gt; &lt;class &#39;str&#39;&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="mi">2</span> <span class="o">*</span> <span class="s2">&quot;2&quot;</span> <span class="c1"># -&gt; &quot;22&quot;</span>
+</span></code></pre></div>
+<h2 id="konvertieren-zwischen-variablentypen">Konvertieren zwischen Variablentypen</h2>
+<h4 id="problem">Problem</h4>
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Zahl=&quot;</span><span class="p">)</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="n">y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="c1"># Bei Eingabe von 2:</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="c1"># -&gt; 22</span>
+</span></code></pre></div></td></tr></table></div>
+<details class="info">
+<summary> Lösung</summary>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="mi">2</span> <span class="o">*</span> <span class="s2">&quot;2&quot;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1"># -&gt; &quot;22&quot;</span>
+</span></code></pre></div>
+<p>Umwandlung von Text / String in eine Zahl / Integer mit int()
+<div class="language-python highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Zahl=&quot;</span><span class="p">))</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="n">y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="c1"># -&gt; 4</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">z</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s2">&quot;Zwei&quot;</span><span class="p">)</span> <span class="c1"># Fehler</span>
+</span></code></pre></div></p>
+</details>
 <div class="admonition warning">
-<p class="admonition-title">Speichern</p>
-<p>Bei größeren Programmen Speichern nicht vergessen!!!</p>
+<p class="admonition-title">Sehr große Fehlerquelle</p>
+<ul>
+<li>Typen von Variablen nicht fest definiert, dynamische Typisierung</li>
+<li><span class="arithmatex">\(\rightarrow\)</span> Können auch während des Programms verändert werden</li>
+</ul>
+<p>Eher vermeiden, nur einen Type
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Anstatt...</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">zahl</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">zahl</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">zahl</span><span class="p">)</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># ... eher..</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">zahl_str</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="n">zahl</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">zahl_str</span><span class="p">)</span>
+</span></code></pre></div></p>
 </div>
-<p><div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
+<div class="admonition example">
+<p class="admonition-title">Aufgaben</p>
+<ol>
+<li>Schreibe ein Programm welches Kilometer in Meter umrechnet und ausgibt.</li>
+<li>Gebe die Ausgabe in dem Format "1km sind 1000m." an, ohne Leerzeichen zwischen der Zahl und der Einheit. Tipp: str() kann Zahlen in Strings umwandeln.</li>
+</ol>
+</div>
+<details class="info">
+<summary> Lösung</summary>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">eingabe</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Wie viele Kilometer? &quot;</span><span class="p">)</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">strecke_km</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">eingabe</span><span class="p">)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">strecke_m</span> <span class="o">=</span> <span class="n">strecke_km</span> <span class="o">*</span> <span class="mi">1000</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">strecke_km</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;km sind &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">strecke_m</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;m.&quot;</span><span class="p">)</span>
 </span></code></pre></div>
-(Code kann auch direkt kopiert werden, Knopf oben rechts)</p>
-<h2 id="kommentare">Kommentare</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Kommentare werden mit einem # begonnen</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span> <span class="c1"># Sie können auch hinter einer Zeile stehen</span>
-</span></code></pre></div>
+</details>
 
 
 

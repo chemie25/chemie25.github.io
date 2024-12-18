@@ -18,7 +18,7 @@
     
     
       
-        <title>Einstieg - Chemie Abi 2025</title>
+        <title>Variablen Einführung - Chemie Abi 2025</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#einstieg" class="md-skip">
+        <a href="#variablen-einfuhrung" class="md-skip">
           Zum Inhalt
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Einstieg
+              Variablen Einführung
             
           </span>
         </div>
@@ -410,18 +410,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#hello-world" class="md-nav__link">
+  <a href="#initialisierung" class="md-nav__link">
     <span class="md-ellipsis">
-      Hello world
+      Initialisierung
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#kommentare" class="md-nav__link">
+  <a href="#verandern-und-mehr-rechenoperationen" class="md-nav__link">
     <span class="md-ellipsis">
-      Kommentare
+      Verändern (und mehr Rechenoperationen)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eingabe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eingabe
     </span>
   </a>
   
@@ -442,36 +451,83 @@
                   
 
 
-<h1 id="einstieg">Einstieg</h1>
-<table>
-<thead>
-<tr>
-<th>Vorteile</th>
-<th>Nachteile</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>- Einfache Syntax, Anfängerfreundlich<br>- Breite Anwendungen (Website wurde mit Python generiert, Datenauswertung, ...)<br>- Viele Bibliotheken<br><br></td>
-<td>- Dynamische Typisierung kann zu Fehlern führen<br>- Kopieren von Daten teils komisch (z.B. bei Listen)<br>- Langsam (jedoch z.B. NumPy)<br>- Seltener für Spieleentwicklung (aber auch möglich!)<br><br></td>
-</tr>
-</tbody>
-</table>
-<h2 id="hello-world">Hello world</h2>
-<div class="admonition example">
-<p class="admonition-title">Aufgabe</p>
-<p>Schreibe das "Hello World" Programm ab und führe aus, z.B. mit <a href="https://www.online-python.com/">online-python</a>.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Speichern</p>
-<p>Bei größeren Programmen Speichern nicht vergessen!!!</p>
-</div>
-<p><div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
+<h1 id="variablen-einfuhrung">Variablen Einführung</h1>
+<ul>
+<li>Speichern von Werten / Daten</li>
+<li>
+<p>Verschiedene <strong>Typen</strong> (z.B. Zahl, Text, Spieler (Klasse))</p>
+</li>
+<li>
+<p><strong>Deklarierung</strong>: Erstes Mal, das eine Variable im Programm auftaucht</p>
+</li>
+<li><strong>Initialisierung</strong>: Anfangswert der Variable zuweisen</li>
+<li>
+<p>Deklarierung und Initialisierung sind dasselbe in Python</p>
+</li>
+<li>
+<p>Auch nach Initialisierung <strong>veränderbar</strong> (im Gegensatz zu Konstanten)</p>
+</li>
+<li>
+<p><strong>Benennung</strong></p>
+<ul>
+<li>Keine "reservierten" Wörter verwenden (<strong>kein</strong> print, str, int, float, ...)</li>
+<li>Mehrere Wörter mit Unterstrich verbinden, <strong>keine</strong> Leerzeichen</li>
+<li>Groß- und Kleinschreibung ist wichtig (Name <span class="arithmatex">\(\neq\)</span> name)</li>
+</ul>
+</li>
+</ul>
+<h2 id="initialisierung">Initialisierung</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Deklarierung und Initialisierung von x</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">3</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Variable x muss initialisiert werden bevor sie verwendet wird</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># y wird der gleiche Wert wie x zugewiesen, also 3</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">y</span> <span class="o">=</span> <span class="n">x</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span>
 </span></code></pre></div>
-(Code kann auch direkt kopiert werden, Knopf oben rechts)</p>
-<h2 id="kommentare">Kommentare</h2>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Kommentare werden mit einem # begonnen</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span> <span class="c1"># Sie können auch hinter einer Zeile stehen</span>
+<h2 id="verandern-und-mehr-rechenoperationen">Verändern (und mehr Rechenoperationen)</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Erhöhe die Variable um 1</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">spieler_level</span> <span class="o">=</span> <span class="n">spieler_level</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Verdopple die Variable</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">spielerSchaden</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">spielerSchaden</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># Halbiere die Variable</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">geschwindigkeit</span> <span class="o">=</span> <span class="n">geschwindigkeit</span> <span class="o">/</span> <span class="mi">2</span>
+</span></code></pre></div>
+<div class="admonition example">
+<p class="admonition-title">Aufgaben</p>
+<ol>
+<li>Berechne <span class="arithmatex">\(z=2 \cdot (2+2)\)</span> und gib das Ergebnis aus.</li>
+<li>Gib das Ergebnis von <span class="arithmatex">\(3x + y -1\)</span> für  <span class="arithmatex">\(y=2x\)</span> und <span class="arithmatex">\(x=5\)</span> aus.</li>
+<li><strong>Erhöhe</strong> die Variable <span class="arithmatex">\(a=2\)</span> um ihr eigenes Quadrat und verdreifache sie danach (nur eine Variable verwenden).</li>
+</ol>
+</div>
+<details class="info">
+<summary> Lösung</summary>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># 1.</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">x</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">ergebnis</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">1</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">ergebnis</span><span class="p">)</span> <span class="c1"># -&gt; 24</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a> <span class="c1"># Leerzeichen sind egal:</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1"># ergebnis = 3*x +y      -1</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a> <span class="c1"># 2.</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a> <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a> <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">a</span> <span class="o">*</span>  <span class="n">a</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a> <span class="n">a</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">*</span> <span class="n">a</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a> <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></code></pre></div>
+</details>
+<h2 id="eingabe">Eingabe</h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Texteingabe</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">eingabe</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Sage etwas: &quot;</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Bei mehreren Ausgaben: Entweder mehrere print() Anweisungen,</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1"># oder mit einem Komma trennen:</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Echo:&quot;</span><span class="p">,</span> <span class="n">eingabe</span><span class="p">)</span>
 </span></code></pre></div>
 
 
