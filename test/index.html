@@ -631,7 +631,7 @@
 
 <h1 id="tests">Tests</h1>
 <h2 id="info">Info</h2>
-<p>Website build 06:10PM on December 28, 2024</p>
+<p>Website build 06:14PM on December 28, 2024</p>
 <details class="example">
 <summary> Calciumcarbonat</summary>
 <p><span class="arithmatex">\(\ce{CaCO3}\)</span></p>
@@ -831,6 +831,12 @@ The collapsed section's content goes here
 
 </details>
 
+<body>
+<p class="clickable" onclick="toggleText()">Click here to reveal more information.</p> <p id="hiddenText" class="hidden-text">This is the hidden text that appears when you click the above line.</p> <script> function toggleText() { const hiddenText = document.getElementById('hiddenText'); if (hiddenText.style.display === 'none' || hiddenText.style.display === '') { hiddenText.style.display = 'block'; } else { hiddenText.style.display = 'none'; } } </script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+
 
 
 
@@ -890,7 +896,5 @@ The collapsed section's content goes here
         <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/mhchem.min.js"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
-document$.subscribe(() => { lightbox.reload() });
-</script></body>
+  </body>
 </html>
