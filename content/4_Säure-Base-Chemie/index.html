@@ -880,14 +880,15 @@
 
 
 <h1 id="4-saure-base-chemie">4. Säure-Base-Chemie</h1>
-<p>!!! WARNING "Ionen"</p>
-<div class="language-text highlight"><pre><span></span><code>$$
+<div class="admonition warning">
+<p class="admonition-title">Ionen</p>
+<div class="arithmatex">\[
 \begin{align*}
 &amp;\text{Oxonium-Ion }  &amp;\ce{H3O+} \\
 &amp;\text{Hydroxid-Ion } &amp;\ce{OH-} \\
 \end{align*}
-$$
-</code></pre></div>
+\]</div>
+</div>
 <h2 id="bronstedt">Brönstedt</h2>
 <ul>
 <li>
@@ -919,23 +920,29 @@ $$
 </li>
 </ul>
 <p><a class="glightbox" href="../../media/media_13.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Säure-Base-Paare" src="../../media/media_13.svg" /></a></p>
-<p>!!! INFO "Autoprotolyse von Wasser"
-    Diese Ionen entstehen bei Protonenübertragungen von <span class="arithmatex">\(H_{2}O\)</span> (Ampholyt) mit sich selbst (<strong>Autoprotolyse</strong>):
-    $$
-    \ce{2 H2O(l) &lt;&lt;=&gt; H3O+(aq)+ OH-(aq)}
-    $$</p>
+<div class="admonition info">
+<p class="admonition-title">Autoprotolyse von Wasser</p>
+<p>Diese Ionen entstehen bei Protonenübertragungen von <span class="arithmatex">\(H_{2}O\)</span> (Ampholyt) mit sich selbst (<strong>Autoprotolyse</strong>):
+$$
+\ce{2 H2O(l) &lt;&lt;=&gt; H3O+(aq)+ OH-(aq)}
+$$</p>
+</div>
 <h2 id="ph-wert">pH-Wert</h2>
-<p>!!! TIP "pH-Wert"
-    $$
-    \begin{align<em>}
-    &amp;\text{pH}=-lg \Big(c(H_3O^+) \cdot \frac{l}{mol} \Big) \
-    &amp;\Leftrightarrow c(H_3O^+) = 10^\text{pH} \cdot \frac{mol}{l}
-    \end{align</em>}
-    $$</p>
-<p>!!! WARNING "pH und pOH Werte (bei 25°C)"
-    $$
-    pH+pOH=14
-    $$</p>
+<div class="admonition tip">
+<p class="admonition-title">pH-Wert</p>
+<div class="arithmatex">\[
+\begin{align*}
+&amp;\text{pH}=-lg \Big(c(H_3O^+) \cdot \frac{l}{mol} \Big) \\
+&amp;\Leftrightarrow c(H_3O^+) = 10^\text{pH} \cdot \frac{mol}{l}
+\end{align*}
+\]</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">pH und pOH Werte (bei 25°C)</p>
+<div class="arithmatex">\[
+pH+pOH=14
+\]</div>
+</div>
 <h3 id="universalindikator">Universalindikator</h3>
 <p><a class="glightbox" href="../../media/pH.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="pH Skala" src="../../media/pH.png" /></a></p>
 <table>
@@ -970,24 +977,27 @@ $$
 </table>
 <hr />
 <h2 id="saurestarken">Säurestärken</h2>
-<details class="info">
-<summary> Säurekonstante <span class="arithmatex">\(K_S\)</span> / Herleitung <span class="arithmatex">\(pK_S\)</span></summary>
-<div class="arithmatex">\[
+<p>??? INFO " Säurekonstante <span class="arithmatex">\(K_S\)</span> / Herleitung <span class="arithmatex">\(pK_S\)</span>"</p>
+<div class="language-text highlight"><pre><span></span><code>$$
 \ce{HAc (aq) + H2O (l) \rightleftarrows H3O+ (aq) + Ac- (aq)}
-\]</div>
-<p>Massenwirkungsgesetz:
 $$
-\begin{align<em>}
-K_C&amp;=\frac{c(\ce{Ac-}) \cdot c(\ce{H3O+})}{c(\ce{HAc}) \cdot c(\ce{H2O})} \
+
+Massenwirkungsgesetz:
+$$
+\begin{align*}
+K_C&amp;=\frac{c(\ce{Ac-}) \cdot c(\ce{H3O+})}{c(\ce{HAc}) \cdot c(\ce{H2O})} \\
 &amp;\Rightarrow K_S = K_C \cdot c(\ce{H2O}) = \frac{c(\ce{Ac-}) \cdot c(\ce{H3O+})}{c(\ce{HAc})}
-\end{align</em>}
-$$</p>
-<div class="arithmatex">\[
+\end{align*}
+$$
+
+$$
 pK_S=-lg(K_S) \Leftrightarrow  K_S=10^{-pK_S} \frac{mol}{L}
-\]</div>
-</details>
-<p>!!! WARNING "Allgemein"
-    Je <strong>kleiner</strong> <span class="arithmatex">\(pK_s\)</span> bzw. <span class="arithmatex">\(pK_B\)</span>, desto <strong>stärker</strong> ist die Säure bzw. Base.</p>
+$$
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Allgemein</p>
+<p>Je <strong>kleiner</strong> <span class="arithmatex">\(pK_s\)</span> bzw. <span class="arithmatex">\(pK_B\)</span>, desto <strong>stärker</strong> ist die Säure bzw. Base.</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -1019,32 +1029,36 @@ pK_S=-lg(K_S) \Leftrightarrow  K_S=10^{-pK_S} \frac{mol}{L}
 </tbody>
 </table>
 <h3 id="berechnungen">Berechnungen</h3>
-<p>!!! INFO "Sehr starke Säuren"
-    Protolysereaktion läuft vollständig ab (Beispiel Salzsäure):
-    $$
-    c(H_3O^+)=c_0(HA)
-    $$
-    $$
-    \ce{HCl (s) + H2O (l) -&gt; H3O+ (aq) + Cl- (aq)}
-    $$</p>
-<p>!!! INFO "Mittelstarke bis schwache Säuren"
-    Reaktion läuft unvollständig ab, es entsteht ein <a href="../3_Chemisches_Gleichgewicht">Gleichgewicht</a>
-    Näherungsformel (Beispiel Essigsäure):
-    $$
-    pH=\frac{1}{2} \cdot (pK_{s} - lg\big(c_0(HA)\big)
-    $$
-    $$
-    \ce{HAc (aq) + H2O (l) &lt;&lt;=&gt; H3O+ (aq) + Ac- (aq)}
-    $$</p>
-<p>!!! TIP "Zusammenhänge zwischen Säure- und Basekonstante"</p>
-<div class="language-text highlight"><pre><span></span><code>$$
+<div class="admonition info">
+<p class="admonition-title">Sehr starke Säuren</p>
+<p>Protolysereaktion läuft vollständig ab (Beispiel Salzsäure):
+$$
+c(H_3O^+)=c_0(HA)
+$$
+$$
+\ce{HCl (s) + H2O (l) -&gt; H3O+ (aq) + Cl- (aq)}
+$$</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Mittelstarke bis schwache Säuren</p>
+<p>Reaktion läuft unvollständig ab, es entsteht ein <a href="../3_Chemisches_Gleichgewicht">Gleichgewicht</a>
+Näherungsformel (Beispiel Essigsäure):
+$$
+pH=\frac{1}{2} \cdot (pK_{s} - lg\big(c_0(HA)\big)
+$$
+$$
+\ce{HAc (aq) + H2O (l) &lt;&lt;=&gt; H3O+ (aq) + Ac- (aq)}
+$$</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Zusammenhänge zwischen Säure- und Basekonstante</p>
+<div class="arithmatex">\[
 K_S \cdot K_B = c(\ce{H3O+}) \cdot c(\ce{OH-}) = 10^{-14} \frac{mol^2}{L^2}
-$$
-
-$$
+\]</div>
+<div class="arithmatex">\[
 pK_S + pK_B = 14
-$$
-</code></pre></div>
+\]</div>
+</div>
 <hr />
 <h2 id="titration">Titration</h2>
 <ul>
@@ -1057,23 +1071,24 @@ $$
 <li>Konstanter pH-Wert</li>
 <li>Lösungen <strong>schwacher</strong> Säuren / Basen und ihren <strong>korrespondieren</strong> Basen / Säuren</li>
 </ul>
-<p>!!! EXAMPLE "Essigsäure-Acetat-Puffer"</p>
-<div class="language-text highlight"><pre><span></span><code>$$
+<div class="admonition example">
+<p class="admonition-title">Essigsäure-Acetat-Puffer</p>
+<div class="arithmatex">\[
 \ce{HAc + H2O &lt;=&gt; Ac^- + H3O+}
-$$
-
-$$
+\]</div>
+<div class="arithmatex">\[
 \begin{align*}
 &amp;\text{Zugabe von Säure:} &amp;\ce{H3O+ + Ac- &lt;=&gt;&gt; HAc + H2O} \\
 &amp;\text{Zugabe von Base:}  &amp;\ce{OH- + HAc &lt;=&gt;&gt; Ac- + H2O}
 \end{align*}
-$$
-</code></pre></div>
-<p>!!! TIP "Henderson-Hasselbach-Gleichung"</p>
-<div class="language-text highlight"><pre><span></span><code>$$
+\]</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Henderson-Hasselbach-Gleichung</p>
+<div class="arithmatex">\[
 pH=pKs - lg \frac{c(\ce{Ha})}{c(\ce{A-})}
-$$
-</code></pre></div>
+\]</div>
+</div>
 <hr />
 <h2 id="bekannte-sauren-basen">Bekannte Säuren / Basen</h2>
 <h3 id="sauren">Säuren</h3>
