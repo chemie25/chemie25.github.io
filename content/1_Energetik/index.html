@@ -614,6 +614,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#durchfuhrung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Durchführung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auswertung_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auswertung
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1099,6 +1117,24 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#durchfuhrung" class="md-nav__link">
+    <span class="md-ellipsis">
+      Durchführung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auswertung_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auswertung
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1404,17 +1440,18 @@ $$
 <p>Thermische Energie, welche übertragen wird. Dabei gilt <span class="arithmatex">\(\Delta T=T_{Ende}-T_{Anfang}\)</span>.
  Ist die Endtemperatur kleiner als die Anfangstemperatur, ist <span class="arithmatex">\(\Delta T&lt;0\)</span> und <span class="arithmatex">\(Q_{R}\)</span> negativ.</p>
 </div>
-<p>??? EXAMPLE " Beispielrechnung"
-    <span class="arithmatex">\(\Delta T=7,24°C=7,24 \space K\)</span>
-    <span class="arithmatex">\(m_{w}=0,1 \space kg\)</span></p>
-<div class="language-text highlight"><pre><span></span><code>$$
+<details class="example">
+<summary> Beispielrechnung</summary>
+<p><span class="arithmatex">\(\Delta T=7,24°C=7,24 \space K\)</span>
+<span class="arithmatex">\(m_{w}=0,1 \space kg\)</span></p>
+<div class="arithmatex">\[
 \begin{align*}
 Q&amp;=c \cdot m \cdot \Delta T \\
 &amp;=4,18 \frac{kJ}{kg \space \cdot \space K} \space \cdot \space 0,1 \space kg \space \cdot \space 7,24 \space K \\
 &amp;\approx 3,03 \space kJ
 \end{align*}
- $$
-</code></pre></div>
+ \]</div>
+</details>
 <h2 id="warmekapazitat-des-kalorimeters">Wärmekapazität des Kalorimeters</h2>
 <h3 id="das-problem">Das Problem</h3>
 <p>Gemessene Temperaturen sind niedriger als erwartet, da nicht nur das Gemisch, sondern auch das Gefäß Wärme aufnimmt. Man kann diesen Messfehler verringern, indem man:</p>
@@ -1429,30 +1466,31 @@ Q&amp;=c \cdot m \cdot \Delta T \\
 C_{K}=c_{w} \cdot \left( \frac{m_{2} \cdot T_{2} -T_{misch}}{T_{misch}-T_{1}}-m_{1} \right)
 \]</div>
 </div>
-<p>??? INFO " Herleitung <span class="arithmatex">\(C_K\)</span>"
-    ### Durchführung
-    1. Hinzugeben von 40 g Wasser mit (Raum-)Temperatur <span class="arithmatex">\(T_{1}\)</span> und Masse <span class="arithmatex">\(m_{1}=40 \space g\)</span>
-    2. Hinzugeben von 40 g warmes (<span class="arithmatex">\(50°C - 60°C\)</span>) Wasser mit Temperatur <span class="arithmatex">\(T_{2}\)</span>
-    3. Bestimmung der Gemischtemperatur <span class="arithmatex">\(T_{misch}\)</span>
-    ### Auswertung
-    Das kalte Wasser <strong><em>und das Gefäß</em></strong> nehmen zusammen Wärme <span class="arithmatex">\(Q_{1}\)</span> auf, welche folglich positiv ist: <span class="arithmatex">\(Q_{1}=C\cdot \Delta T_{1}&gt;0\)</span>. <span class="arithmatex">\(C\)</span> beschreibt dabei die Wärmekapazität des kalten Wassers <strong><em>und</em></strong> des Gefäßes.
-    $$
-    C=C_{K}+c_{w} \cdot m_{1}
-    $$
-    Das warme Wasser hingegen gibt Wärme <span class="arithmatex">\(Q_{1}\)</span> ab, welche folglich negativ ist: <span class="arithmatex">\(Q_{2}=c_{w} \cdot m_{2}\cdot \Delta T_{2}&lt;0\)</span>, wobei <span class="arithmatex">\(\Delta T_{2}&lt;0\)</span> gilt.</p>
-<div class="language-text highlight"><pre><span></span><code>Zudem gelten $\Delta T_{1}=T_{misch}-T_{1}$ (und $\Delta T_{2}=T_{misch}-T_{2}$).
-
-Die gesamte Energie in dem System bleibt jedoch konstant, da das System isoliert ist. Folglich ist ihre Änderung $Q_{gesamt}$ gleich null:
-
+<details class="info">
+<summary> Herleitung <span class="arithmatex">\(C_K\)</span></summary>
+<h3 id="durchfuhrung">Durchführung</h3>
+<ol>
+<li>Hinzugeben von 40 g Wasser mit (Raum-)Temperatur <span class="arithmatex">\(T_{1}\)</span> und Masse <span class="arithmatex">\(m_{1}=40 \space g\)</span></li>
+<li>Hinzugeben von 40 g warmes (<span class="arithmatex">\(50°C - 60°C\)</span>) Wasser mit Temperatur <span class="arithmatex">\(T_{2}\)</span></li>
+<li>Bestimmung der Gemischtemperatur <span class="arithmatex">\(T_{misch}\)</span></li>
+</ol>
+<h3 id="auswertung_1">Auswertung</h3>
+<p>Das kalte Wasser <strong><em>und das Gefäß</em></strong> nehmen zusammen Wärme <span class="arithmatex">\(Q_{1}\)</span> auf, welche folglich positiv ist: <span class="arithmatex">\(Q_{1}=C\cdot \Delta T_{1}&gt;0\)</span>. <span class="arithmatex">\(C\)</span> beschreibt dabei die Wärmekapazität des kalten Wassers <strong><em>und</em></strong> des Gefäßes.
 $$
-\begin{align*}
-Q_{gesamt} &amp;= Q_{1} + Q_{2}=0 \\
-&amp;= ((C_{K}+c_{w} \cdot m_{1}) \cdot \Delta T_{1}) + (c_{w} \cdot m_{2}\cdot \Delta T_{2}) \\
+C=C_{K}+c_{w} \cdot m_{1}
+$$
+Das warme Wasser hingegen gibt Wärme <span class="arithmatex">\(Q_{1}\)</span> ab, welche folglich negativ ist: <span class="arithmatex">\(Q_{2}=c_{w} \cdot m_{2}\cdot \Delta T_{2}&lt;0\)</span>, wobei <span class="arithmatex">\(\Delta T_{2}&lt;0\)</span> gilt.</p>
+<p>Zudem gelten <span class="arithmatex">\(\Delta T_{1}=T_{misch}-T_{1}\)</span> (und <span class="arithmatex">\(\Delta T_{2}=T_{misch}-T_{2}\)</span>).</p>
+<p>Die gesamte Energie in dem System bleibt jedoch konstant, da das System isoliert ist. Folglich ist ihre Änderung <span class="arithmatex">\(Q_{gesamt}\)</span> gleich null:</p>
+<p>$$
+\begin{align<em>}
+Q_{gesamt} &amp;= Q_{1} + Q_{2}=0 \
+&amp;= ((C_{K}+c_{w} \cdot m_{1}) \cdot \Delta T_{1}) + (c_{w} \cdot m_{2}\cdot \Delta T_{2}) \
 &amp;=0
-\end{align*}
+\end{align</em>}
 $$
-Dies lässt sich dann nach $C_K$ umformen, um die oben genannte Formel zu erhalten.
-</code></pre></div>
+Dies lässt sich dann nach <span class="arithmatex">\(C_K\)</span> umformen, um die oben genannte Formel zu erhalten.</p>
+</details>
 <hr />
 <h2 id="enthalpien">Enthalpien</h2>
 <h3 id="satz-von-hess">Satz von Hess</h3>
@@ -1479,11 +1517,13 @@ $$
 <p class="admonition-title">Anzahlen</p>
 <p>Es geht nicht darum, wie viele Teilchen vorhanden sind, sondern wie oft die Reaktion abläuft.</p>
 </div>
-<p>??? EXAMPLE " Beispiel Schwefelsäure"
-    $$
-    H_2SO_{4} + 2NaOH \to {2}H_{2}O+Na_{2}SO_{4}
-    $$
-    Die Neutralisation <span class="arithmatex">\(H^+ + OH^- \to H_{2}O\)</span> läuft pro <span class="arithmatex">\(H_{2}SO_{4}\)</span> Molekül 2-mal ab, da zwei Protonen reagieren.</p>
+<details class="example">
+<summary> Beispiel Schwefelsäure</summary>
+<p>$$
+H_2SO_{4} + 2NaOH \to {2}H_{2}O+Na_{2}SO_{4}
+$$
+Die Neutralisation <span class="arithmatex">\(H^+ + OH^- \to H_{2}O\)</span> läuft pro <span class="arithmatex">\(H_{2}SO_{4}\)</span> Molekül 2-mal ab, da zwei Protonen reagieren.</p>
+</details>
 <h3 id="losungsenthalpie">Lösungsenthalpie</h3>
 <div class="admonition info">
 <p class="admonition-title">Lösungsenthalpie</p>
