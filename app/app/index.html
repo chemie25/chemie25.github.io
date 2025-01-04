@@ -725,15 +725,25 @@
     align-items: center; 
     justify-content: center;"
   }
+
+  .button {
+    background-color: var(--md-default-bg-color);
+    border: none;
+    padding: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 200%;
+  }
   </style>
 
   <div class="ui-elements">
-    <button id="button_previous" type="button" onclick="previousFlashcard()">Previous</button>
+    <button id="button_previous" type="button" class="button" onclick="previousFlashcard()">Previous</button>
 
-    <button type="button" onclick="buttonWrong()">Falsch</button>
-    <button type="button" onclick="buttonRight()">Richtig</button>
+    <button type="button" class="button" onclick="buttonWrong()">Falsch</button>
+    <button type="button" class="button" onclick="buttonRight()">Richtig</button>
 
-    <button id="button_skip" type="button" onclick="nextFlashcard()">Skip</button>
+    <button id="button_skip" type="button" class="button" onclick="nextFlashcard()">Skip</button>
   </div>
 
   <script src="data.js"></script>
