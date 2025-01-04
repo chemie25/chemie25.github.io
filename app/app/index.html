@@ -700,69 +700,74 @@
 
   <h1>App</h1>
 
-<body onload='onLoad()'> 
+<body>
+  <body onload='onLoad()'> 
 
-<link rel="stylesheet" type="text/css" href="flashcard.css">
+  <link rel="stylesheet" type="text/css" href="flashcard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css">
 
-<div class="card-wrapper">
-  <div class="card-body">
-  <div class="card-front">
-      <p id="flashcard_front">None</p>
+  <div class="card-wrapper">
+    <div class="card-body">
+    <div class="card-front">
+        <p id="flashcard_front">None</p>
+    </div>
+    <div class="card-back">
+        <p id="flashcard_back">None</p>
+        <p id="counts">None</p>
+    </div>
+    </div>
   </div>
-  <div class="card-back">
-      <p id="flashcard_back">None</p>
-      <p id="counts">None</p>
+
+  <style>
+  .ui-elements {
+    margin-top: 0.5rem;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;"
+  }
+
+  .ui-elements .button {
+    width: 6rem;
+    margin: 0.25rem;
+
+    display: inline-block;
+    padding: 0.5rem 0.5rem;
+    font-size: 100%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 9px #999;
+
+    float: left;
+  }
+
+  .button:active {
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  </style>
+
+  <div class="ui-elements">
+    <button id="button_previous" type="button" class="button" style="background-color:grey;" onclick="previousFlashcard()">Previous</button>
+
+    <button type="button" class="button" style="background-color:red;"    onclick="buttonWrong()">Falsch  </button>
+    <button type="button" class="button" style="background-color:green;"  onclick="buttonRight()">Richtig </button>
+
+    <button id="button_skip" type="button" class="button" style="background-color:grey;" onclick="nextFlashcard()">Skip</button>
   </div>
-  </div>
-</div>
 
-<style>
-.ui-elements {
-  margin-top: 0.5rem;
-  display: flex; 
-  flex-direction: row; 
-  align-items: center; 
-  justify-content: center;"
-}
-
-.ui-elements .button {
-  width: 6rem;
-  margin: 0.25rem;
-
-  display: inline-block;
-  padding: 0.5rem 0.5rem;
-  font-size: 100%;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: red;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 9px #999;
-
-  float: left;
-}
-
-.button:active {
-  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-</style>
-
-<div class="ui-elements">
-  <button id="button_previous" type="button" class="button" style="background-color:grey;" onclick="previousFlashcard()">Previous</button>
-
-  <button type="button" class="button" style="background-color:red;"    onclick="buttonWrong()">Falsch  </button>
-  <button type="button" class="button" style="background-color:green;"  onclick="buttonRight()">Richtig </button>
-
-  <button id="button_skip" type="button" class="button" style="background-color:grey;" onclick="nextFlashcard()">Skip</button>
-</div>
-
-<script src="data.js"></script>
-<script src="script.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 
 
 
@@ -827,7 +832,5 @@
         <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/mhchem.min.js"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
-document$.subscribe(() => { lightbox.reload() });
-</script></body>
+  </body>
 </html>
