@@ -80,7 +80,7 @@ function updateFlashcard() {
     const table = {
         'flashcard_front': flashcard.f, 
         'flashcard_back': flashcard.b, 
-        'counts': count.w + "x falsch " +  count.r + "x richtig", 
+        'counts': "(" + count.w + "x falsch " +  count.r + "x richtig)", 
     };
     
     setHTML(table);
