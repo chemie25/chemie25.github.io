@@ -30,7 +30,6 @@ font-size: 150%;
 }
 .card-back {
 transform: rotateX(180deg);
-color: var(--md-primary-fg-color);
 }
 .card-wrapper:hover .card-body {
 transform: rotateX(180deg);

@@ -738,7 +738,7 @@
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #04AA6D;
+    background-color: red;
     border: none;
     border-radius: 8px;
     box-shadow: 0 9px #999;
@@ -747,19 +747,19 @@
   }
 
   .button:active {
-    background-color: #3e8e41;
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
   </style>
 
   <div class="ui-elements">
-    <button id="button_previous" type="button" class="button" onclick="previousFlashcard()">Previous</button>
+    <button id="button_previous" type="button" class="button" style="background-color:grey;" onclick="previousFlashcard()">Previous</button>
 
-    <button type="button" class="button" onclick="buttonWrong()">Falsch</button>
-    <button type="button" class="button" onclick="buttonRight()">Richtig</button>
+    <button type="button" class="button" style="background-color:red;"    onclick="buttonWrong()">Falsch  </button>
+    <button type="button" class="button" style="background-color:green;"  onclick="buttonRight()">Richtig </button>
 
-    <button id="button_skip" type="button" class="button" onclick="nextFlashcard()">Skip</button>
+    <button id="button_skip" type="button" class="button" style="background-color:grey;" onclick="nextFlashcard()">Skip</button>
   </div>
 
   <script src="data.js"></script>

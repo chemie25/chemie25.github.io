@@ -13,13 +13,8 @@ function hashString(string) {
 }
 
 let flashcards_counts = new Array();
-let flashcards = new Array();
 
 let current_index = 0;
-
-function loadFlashcards() {
-    flashcards = JSON.parse(flashcards_str);
-}
 
 function loadFlashcardsCounts() {
     const flashcards_counts_map = JSON.parse(localStorage.getItem("flashcards_counts")) || new Map();
@@ -80,7 +75,6 @@ function updateFlashcard() {
 
 function onLoad() {
     // loading
-    loadFlashcards();
     loadFlashcardsCounts();
 
     // sort flashcards for training priority
