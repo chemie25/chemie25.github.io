@@ -49,14 +49,19 @@ function setHTML(table) {
     for (const [id, content] of Object.entries(table)) {
         const elem = document.getElementById(id);
         elem.innerHTML = content;
-        renderMathInElement(elem, {
-            delimiters: [
-              { left: "$$",  right: "$$",  display: true },
-              { left: "$",   right: "$",   display: false },
-              { left: "\\(", right: "\\)", display: false },
-              { left: "\\[", right: "\\]", display: true }
-            ]
-          })
+
+        // update katex
+        if (typeof renderMathInElement === "function") { 
+            // safe to use the function
+            renderMathInElement(elem, {
+                delimiters: [
+                { left: "$$",  right: "$$",  display: true },
+                { left: "$",   right: "$",   display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+                ]
+            })
+        }
     }
 }
 
