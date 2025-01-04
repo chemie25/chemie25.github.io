@@ -15,11 +15,9 @@ function hashString(string) {
 let flashcards_counts = new Array();
 let current_index = 0;
 
-
 const audio_button = document.getElementById("audio-button");
 const audio_right = document.getElementById("audio-right");
 const audio_wrong = document.getElementById("audio-wrong");
-
 
 function loadFlashcardsCounts() {
     const flashcards_counts_map = JSON.parse(localStorage.getItem("flashcards_counts")) || new Map();
