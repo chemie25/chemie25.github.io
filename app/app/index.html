@@ -754,24 +754,24 @@
   </style>
 
   <div class="ui-elements">
-    <button id="button_previous" type="button" class="button" style="background-color:grey;" onclick="previousFlashcard()">Previous</button>
+    <button id="button_previous" type="button" class="button" style="background-color:grey;" onclick="previousFlashcard()">&larr;</button>
 
     <button type="button" class="button" style="background-color:red;"    onclick="buttonWrong()">Falsch  </button>
     <button type="button" class="button" style="background-color:green;"  onclick="buttonRight()">Richtig </button>
 
-    <button id="button_skip" type="button" class="button" style="background-color:grey;" onclick="nextFlashcard()">Skip</button>
+    <button id="button_skip" type="button" class="button" style="background-color:grey;" onclick="nextFlashcard()">&rarr;</button>
   </div>
 
   <script src="data.js"></script>
   <script src="script.js"></script>
+
+  <audio id="audio-button"  src="/audio/146718__leszek_szary__button.wav"></audio>
+  <audio id="audio-right"   src="/audio/243701__ertfelda__correct.wav"></audio>
+  <audio id="audio-wrong"   src="/audio/243700__ertfelda__incorrect.wav"></audio>
+
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
-
-
-!!! warning "WIP"
-
-    Die App ist noch nicht fertig.
 
 
 

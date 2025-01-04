@@ -45,6 +45,11 @@ function setFlashcardsCounts() {
     localStorage.setItem("flashcards_counts", JSON.stringify(flashcards_counts_map));
 }
 
+function playAudioElement(id) {
+    const audio = document.getElementById(id);
+    audio.play();
+}
+
 function setHTML(table) {
     for (const [id, content] of Object.entries(table)) {
         const elem = document.getElementById(id);
@@ -91,8 +96,6 @@ function onLoad() {
     // loading
     loadFlashcardsCounts();
 
-    // sort flashcards for training priority
-
     // start
     update();
 }
@@ -106,9 +109,11 @@ function buttonRight() {
     setFlashcardsCounts();
 
     // skip to next 
-    nextFlashcard();
-
+    if (canNext()) {
+        current_index++;
+    }
     update();
+    playAudioElement("audio-right");
 };
 
 function buttonWrong() {
@@ -116,6 +121,7 @@ function buttonWrong() {
     setFlashcardsCounts();
 
     update();
+    playAudioElement("audio-wrong");
 };
 
 function canNext() { return current_index + 1 < flashcards.length; }
@@ -126,6 +132,7 @@ function nextFlashcard() {
         current_index++;
         update();
     }
+    playAudioElement("audio-button");
 };
 
 function previousFlashcard() {
@@ -133,4 +140,5 @@ function previousFlashcard() {
         current_index--;
         update();
     }
+    playAudioElement("audio-button");
 };
