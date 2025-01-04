@@ -47,7 +47,9 @@ function setFlashcardsCounts() {
 
 function setHTML(table) {
     for (const [id, content] of Object.entries(table)) {
-        document.getElementById(id).innerHTML = content;
+        const elem = document.getElementById(id);
+        elem.innerHTML = content;
+        renderMathInElement(elem);
     }
 }
 
