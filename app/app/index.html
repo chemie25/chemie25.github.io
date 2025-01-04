@@ -742,14 +742,14 @@
     background-color: var(--color);
     border: none;
     border-radius: 8px;
-    box-shadow: 0 9px hsl(from var(--color) h s calc(l - 15));
+    box-shadow: 0 9px hsl(from var(--color) h s calc(l * 0.6));
 
     float: left;
   }
 
   .button:active {
     background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
-    box-shadow: 0 5px hsl(from var(--color) h s calc(l - 30));
+    box-shadow: 0 5px hsl(from var(--color) h s calc(l * 0.3));
     transform: translateY(4px);
   }
   </style>
