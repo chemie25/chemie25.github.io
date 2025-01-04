@@ -703,10 +703,18 @@
 
   <link rel="stylesheet" type="text/css" href="flashcard.css">
 
-  <p id="flashcard_front">None</p>
-  <p id="flashcard_back">None</p>
-  <p id="count_right">None</p>
-  <p id="count_wrong">None</p>
+  <div class="card-wrapper">
+    <div class="card-body">
+    <div class="card-front">
+        <p id="flashcard_front">None</p>
+    </div>
+    <div class="card-back">
+        <p id="flashcard_back">None</p>
+        <p id="count_right">None</p>
+        <p id="count_wrong">None</p>
+    </div>
+    </div>
+  </div>
 
   <button id="button_previous" type="button" onclick="previousFlashcard()">Previous</button>
 
