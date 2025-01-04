@@ -712,15 +712,17 @@
     </div>
     <div class="card-back">
         <p id="flashcard_back">None</p>
-        <p id="count_right">None</p>
-        <p id="count_wrong">None</p>
+        <div>
+          <p id="count_right">None</p>
+          <p id="count_wrong" style="float: left;">None</p>
+        </div>
     </div>
     </div>
   </div>
 
   <button id="button_previous" type="button" onclick="previousFlashcard()">Previous</button>
 
-  <button type="button" onclick="buttonWrong()"></button>
+  <button type="button" onclick="buttonWrong()">Wrong</button>
   <button type="button" onclick="buttonRight()">Right</button>
 
   <button id="button_skip" type="button" onclick="nextFlashcard()">Skip</button>
