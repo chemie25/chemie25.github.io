@@ -13,11 +13,15 @@ function hashString(string) {
 }
 
 let flashcards_counts = new Array();
-let current_index = 0;
+
+// current
+let flashcards_stack_counts = new Array();
+let flashcards_stack = new Array();
+let stack_index = 0;
 
 const audio_button = document.getElementById("audio-button");
-const audio_right = document.getElementById("audio-right");
-const audio_wrong = document.getElementById("audio-wrong");
+const audio_right  = document.getElementById("audio-right");
+const audio_wrong  = document.getElementById("audio-wrong");
 
 function loadFlashcardsCounts() {
     const flashcards_counts_map = JSON.parse(localStorage.getItem("flashcards_counts")) || new Map();
@@ -77,8 +81,8 @@ function update() {
 }
 
 function updateFlashcard() {
-    const flashcard = flashcards[current_index];
-    const count = flashcards_counts[current_index];
+    const flashcard = flashcards_stack[stack_index];
+    const count = flashcards_stack_counts[stack_index];
 
     const table = {
         'flashcard_front': flashcard.f, 
@@ -89,10 +93,44 @@ function updateFlashcard() {
     setHTML(table);
 }
 
+function generateStack(max_stack_size = Infinity) {
+    
+    //1) combine all flashcards and their counts into list 
+    const list = [];
+    for (let j = 0; j < flashcards.length; j++) 
+        list.push({'flashcard': flashcards[j], 'counts': flashcards_counts[j]});
+    
+    //2) sort:
+    list.sort(function(a, b) {
+        // if negative, a is sorted before b
+
+        // first the questions that have not been answered at all
+        const a0 = (a.counts.r + a.counts.w) == 0;
+        const b0 = (b.counts.r + b.counts.w) == 0;
+        
+        if (a0 == 0 || b0 == 0) {
+            return ((a0 && b0) ? 0.5 - Math.random() : (a0 ? -1 : 1));
+        }
+        
+        // then based on the difference between right and wrong
+        const deltaA = a.counts.r - a.counts.w;
+        const deltaB = b.counts.r - b.counts.w;
+        return ((deltaA < deltaB) ? -1 : ((deltaA == deltaB) ? 0.5 - Math.random() : 1));
+    });
+    
+    //3) generate the stack
+    flashcards_stack = new Array();
+    flashcards_stack_counts = new Array();
+    for (let k = 0; k < list.length && k < max_stack_size; k++) {
+        flashcards_stack.push(list[k].flashcard);
+        flashcards_stack_counts.push(list[k].counts);
+    }
+}
 
 function onLoad() {
-    // loading
     loadFlashcardsCounts();
+
+    generateStack();
 
     // start
     update();
@@ -103,31 +141,31 @@ function onLoad() {
 // 2. store the right count (for this flashcard)
 // 3. change to the next flashcard
 function buttonRight() {
-    flashcards_counts[current_index].r++;
+    flashcards_stack_counts[stack_index].r++;
     setFlashcardsCounts();
 
     // skip to next 
     if (canNext()) {
-        current_index++;
+        stack_index++;
     }
     update();
     audio_right.play();
 };
 
 function buttonWrong() {
-    flashcards_counts[current_index].w++;
+    flashcards_stack_counts[stack_index].w++;
     setFlashcardsCounts();
 
     update();
     audio_wrong.play();
 };
 
-function canNext() { return current_index + 1 < flashcards.length; }
-function canPrevious() { return current_index - 1 >= 0; }
+function canNext() { return stack_index + 1 < flashcards_stack.length; }
+function canPrevious() { return stack_index - 1 >= 0; }
 
 function nextFlashcard() {
     if (canNext()) {
-        current_index++;
+        stack_index++;
         update();
     }
     audio_button.play();
@@ -135,7 +173,7 @@ function nextFlashcard() {
 
 function previousFlashcard() {
     if (canPrevious()) {
-        current_index--;
+        stack_index--;
         update();
     }
     audio_button.play();

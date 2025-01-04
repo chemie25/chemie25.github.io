@@ -701,9 +701,10 @@
   <h1>App</h1>
 
 <body>  
-  <body onload='onLoad()'> 
-
+  <!-- <meta http-equiv="content-type" content="text/html; charset=utf-8"> -->
   <link rel="stylesheet" type="text/css" href="flashcard.css">
+
+  <body onload='onLoad()'> 
 
   <div class="card-wrapper">
     <div class="card-body">
@@ -762,6 +763,8 @@
 
     <button id="button_skip" type="button" class="button" style="--color:grey;" onclick="nextFlashcard()">&rarr;</button>
   </div>
+
+  <a onclick="if(confirm('Möchtest du wirklich deinen GESAMTEN Fortschritt zurücksetzen???')) { localStorage.clear(); location.reload(); }">Zurücksetzen</a>
 
   <audio id="audio-button"  src="/audio/146718__leszek_szary__button.mp3"></audio>
   <audio id="audio-right"   src="/audio/243701__ertfelda__correct.mp3"></audio>
