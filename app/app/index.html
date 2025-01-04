@@ -711,25 +711,32 @@
         <p id="flashcard_front">None</p>
     </div>
     <div class="card-back">
-        <div>
-          <p id="flashcard_back">None</p>
-        </div>
-        <div>
-          <p>Richtig: </p> <p id="count_right">None</p>
-          <p>Falsch: </p> <p id="count_wrong">None</p>
-        </div>
+        <p id="flashcard_back">None</p>
+        <p id="counts">None</p>
     </div>
     </div>
   </div>
 
-  <button id="button_previous" type="button" onclick="previousFlashcard()">Previous</button>
+  <style>
+  .ui-elements {
+    margin-top: 1rem;
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;"
+  }
+  </style>
 
-  <button type="button" onclick="buttonWrong()">Wrong</button>
-  <button type="button" onclick="buttonRight()">Right</button>
+  <div class="ui-elements">
+    <button id="button_previous" type="button" onclick="previousFlashcard()">Previous</button>
 
-  <button id="button_skip" type="button" onclick="nextFlashcard()">Skip</button>
+    <button type="button" onclick="buttonWrong()">Falsch</button>
+    <button type="button" onclick="buttonRight()">Richtig</button>
 
-  <!-- <script src="data.json"></script> -->
+    <button id="button_skip" type="button" onclick="nextFlashcard()">Skip</button>
+  </div>
+
+  <script src="data.js"></script>
   <script src="script.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
@@ -786,6 +793,8 @@ document$.subscribe(() => { lightbox.reload() });
       <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
       
         <script src="../script.js"></script>
+      
+        <script src="../data.js"></script>
       
         <script src="../../javascripts/katex.js"></script>
       

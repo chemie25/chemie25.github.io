@@ -18,7 +18,6 @@ let flashcards = new Array();
 let current_index = 0;
 
 function loadFlashcards() {
-    const flashcards_str = '[{"f": "Front 1", "b": "Back 1"}, {"f": "Front 2", "b": "Back 2"}, {"f": "Front 3", "b": "Back 3"}]';
     flashcards = JSON.parse(flashcards_str);
 }
 
@@ -72,8 +71,7 @@ function updateFlashcard() {
     const table = {
         'flashcard_front': flashcard.f, 
         'flashcard_back': flashcard.b, 
-        'count_right': count.r, 
-        'count_wrong': count.w, 
+        'counts': count.w + "x falsch " +  count.r + "x richtig", 
     };
     
     setHTML(table);

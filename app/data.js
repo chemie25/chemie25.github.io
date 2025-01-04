@@ -1,0 +1,1 @@
+const flashcards_str = '[{"f": "Front 1", "b": "Back 1"}, {"f": "Front 2", "b": "Back 2"}, {"f": "Front 3", "b": "Back 3"}]';
