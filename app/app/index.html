@@ -701,6 +701,8 @@
 <body>
   <body onload='onLoad()'> 
 
+  <link rel="stylesheet" type="text/css" href="flashcard.css">
+
   <p id="flashcard_front">None</p>
   <p id="flashcard_back">None</p>
   <p id="count_right">None</p>
@@ -708,7 +710,7 @@
 
   <button id="button_previous" type="button" onclick="previousFlashcard()">Previous</button>
 
-  <button type="button" onclick="buttonWrong()">[Wrong](#){ .md-button .md-button--primary }</button>
+  <button type="button" onclick="buttonWrong()"></button>
   <button type="button" onclick="buttonRight()">Right</button>
 
   <button id="button_skip" type="button" onclick="nextFlashcard()">Skip</button>
