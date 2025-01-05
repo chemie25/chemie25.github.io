@@ -707,21 +707,20 @@
   <body onload='onLoad()'> 
 
 
-    <div style="margin-top: 0.5rem;">
-      <select id="stack-size" onchange="onStackSettingsChange()">
-        <option selected>Alle</option>
-        <option>5</option>
-        <option>10</option>
-        <option>15</option>
-        <option>20</option>
-      </select>
-      <label for="stack-size">Karteikarten</label>
-
-      <input type="checkbox" id="stack-marked-only" onchange="onStackSettingsChange()">Nur markierte</input>
-      <a onclick="if(confirm('Möchtest du wirklich deinen GESAMTEN Fortschritt zurücksetzen???')) { localStorage.clear(); location.reload(); }">
-        Fortschritt zurücksetzen
-      </a>
-    </div>  
+  <div style="margin: 0.5rem;">
+    <select id="stack-size" onchange="onStackSettingsChange()">
+      <option selected>Alle</option>
+      <option>5</option>
+      <option>10</option>
+      <option>15</option>
+      <option>20</option>
+    </select>
+    <label for="stack-size">Karteikarten</label>
+    <input type="checkbox" id="stack-marked-only" onchange="onStackSettingsChange()">Nur markierte</input>
+    <a onclick="if(confirm('Möchtest du wirklich deinen GESAMTEN Fortschritt zurücksetzen???')) { localStorage.clear(); location.reload(); }">
+      Fortschritt zurücksetzen
+    </a>
+  </div>  
 
 
   <div class="card-wrapper">
