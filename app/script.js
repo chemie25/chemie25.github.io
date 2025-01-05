@@ -75,7 +75,9 @@ function setHTML(table) {
 function update() {
     // update buttons
     document.getElementById("button_previous").disabled = !canPrevious();
-    document.getElementById("button_skip").disabled = !canNext();
+    document.getElementById("button_skip").disabled     = !canNext();
+
+    setHTML({"flashcard-number": (stack_index + 1) + " / " + flashcards_stack.length})
 
     updateFlashcard();
 }
@@ -93,15 +95,20 @@ function updateFlashcard() {
     setHTML(table);
 }
 
-function generateStack(max_stack_size = Infinity) {
+function getCatalog() {
+    const catalog = [];
+    for (let j = 0; j < flashcards.length; j++) 
+        catalog.push({'flashcard': flashcards[j], 'counts': flashcards_counts[j]});
+    return catalog;
+}
+
+function generateStack(max_stack_size, marked_only) {
     
     //1) combine all flashcards and their counts into list 
-    const list = [];
-    for (let j = 0; j < flashcards.length; j++) 
-        list.push({'flashcard': flashcards[j], 'counts': flashcards_counts[j]});
+    const catalog = getCatalog();
     
     //2) sort:
-    list.sort(function(a, b) {
+    catalog.sort(function(a, b) {
         // if negative, a is sorted before b
 
         // first the questions that have not been answered at all
@@ -121,18 +128,24 @@ function generateStack(max_stack_size = Infinity) {
     //3) generate the stack
     flashcards_stack = new Array();
     flashcards_stack_counts = new Array();
-    for (let k = 0; k < list.length && k < max_stack_size; k++) {
-        flashcards_stack.push(list[k].flashcard);
-        flashcards_stack_counts.push(list[k].counts);
+    for (let k = 0; k < catalog.length && k < max_stack_size; k++) {
+        flashcards_stack.push(catalog[k].flashcard);
+        flashcards_stack_counts.push(catalog[k].counts);
     }
 }
 
 function onLoad() {
     loadFlashcardsCounts();
+    onStackSettingsChange();
+}
 
-    generateStack();
+function onStackSettingsChange() {
+    let max_stack_size = document.getElementById("stack-size").value;
+    max_stack_size = (max_stack_size == "Alle") ? Infinity : parseInt(max_stack_size);
 
-    // start
+    const marked_only = document.getElementById("stack-marked-only").checked;
+
+    generateStack(max_stack_size, marked_only);
     update();
 }
 

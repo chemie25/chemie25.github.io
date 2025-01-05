@@ -1,5 +1,6 @@
 .card-wrapper {
 width: auto;
+max-width: 40rem;
 height: 7rem;
 margin: auto;
 }
