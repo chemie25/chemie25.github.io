@@ -33,7 +33,7 @@ function loadFlashcardsCounts() {
 
         // add count to array if the flashcard is present in counts_map
         // else add the default
-        flashcards_counts.push(count || {r: 0, w: 0});
+        flashcards_counts.push(count || {r: 0, w: 0, f: false});
     }
 }
 
@@ -44,9 +44,7 @@ function setFlashcardsCounts() {
         const count = flashcards_counts[i];
         const id = getFlashcardId(flashcards[i]);
 
-        if (count != {r: 0, w: 0}) {
-            flashcards_counts_map[id] = count;
-        }
+        flashcards_counts_map[id] = count;
     }
 
     localStorage.setItem("flashcards_counts", JSON.stringify(flashcards_counts_map));
@@ -93,19 +91,25 @@ function updateFlashcard() {
     };
     
     setHTML(table);
+    
+    document.getElementById("checkbox-favourite").checked = count.f;
 }
 
-function getCatalog() {
+function getCatalog(marked_only = false) {
     const catalog = [];
-    for (let j = 0; j < flashcards.length; j++) 
+    for (let j = 0; j < flashcards.length; j++)  {
+        if (marked_only && !flashcards_counts[j].f) {
+            continue;
+        }
         catalog.push({'flashcard': flashcards[j], 'counts': flashcards_counts[j]});
+    }
     return catalog;
 }
 
 function generateStack(max_stack_size, marked_only) {
     
     //1) combine all flashcards and their counts into list 
-    const catalog = getCatalog();
+    const catalog = getCatalog(marked_only);
     
     //2) sort:
     catalog.sort(function(a, b) {
@@ -147,6 +151,12 @@ function onStackSettingsChange() {
 
     generateStack(max_stack_size, marked_only);
     update();
+}
+
+function changeFavourite() {
+    const f = document.getElementById("checkbox-favourite").checked;
+    flashcards_stack_counts[stack_index].f = f;
+    setFlashcardsCounts();
 }
 
 // TODO

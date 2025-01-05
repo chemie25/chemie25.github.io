@@ -709,11 +709,6 @@
 
   <body onload='onLoad()'> 
 
-  <label class="container">
-    <input type="checkbox">
-    <span class="favourite"></span>
-  </label>
-
   <div style="margin: 0.5rem;">
     <select id="stack-size" onchange="onStackSettingsChange()">
       <option selected>Alle</option>
@@ -730,11 +725,20 @@
   </div>  
 
   <div class="card-wrapper">
+
     <div class="card-body">
       <div class="card-front">
         <p id="flashcard_front">None</p>
       </div>
       <div class="card-back">
+
+        <div style="position: absolute; top: 0px; right: 0px; padding-right: 1rem;">
+          <label class="container">
+            <input type="checkbox" id="checkbox-favourite" onclick="changeFavourite();">
+            <span class="favourite"></span>
+          </label>
+        </div>
+
         <p id="flashcard_back">None</p>
         <p id="counts">None</p>
       </div>

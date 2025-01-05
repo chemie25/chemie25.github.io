@@ -39,58 +39,25 @@ transform: translateY(4px);
 
 /*&#9734; &#9733;*/
 
-.container {
-display: block;
-position: relative;
-padding-left: 35px;
-margin-bottom: 12px;
-cursor: pointer;
-font-size: 22px;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-}
-
 /* Hide the browser's default checkbox */
 .container input {
-position: absolute;
 opacity: 0;
-cursor: pointer;
-height: 0;
-width: 0;
 }
 
 /* Create a custom checkbox */
 .favourite {
-text-rendering:auto;
-
-position: absolute;
-top: 0;
-left: 0;
-height: 25px;
-width: 25px;
+text-rendering: auto;
+font-size: 250%;
 background-color: transparent;
+color: rgb(255, 162, 0);
 }
 
 /* Create the favourite/indicator (hidden when not checked) */
 .favourite:after {
-content: "&star;";
+content: "☆";
 }
 
 /* Show the favourite when checked */
 .container input:checked ~ .favourite:after {
-content: "&fstar;";
-}
-
-/* Style the favourite/indicator */
-.container .favourite:after {
-left: 9px;
-top: 5px;
-width: 5px;
-height: 10px;
-border: none;
--webkit-transform: rotate(45deg);
--ms-transform: rotate(45deg);
-transform: rotate(45deg);
+content: "★";
 }
