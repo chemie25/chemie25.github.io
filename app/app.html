@@ -1,0 +1,59 @@
+
+<body>  
+  <!-- <meta http-equiv="content-type" content="text/html; charset=utf-8"> -->
+  <link rel="stylesheet" type="text/css" href="flashcard.css">
+  <link rel="stylesheet" type="text/css" href="app.css">
+
+  <body onload='onLoad()'> 
+  
+  <label class="container">
+    <input type="checkbox">
+    <span class="favourite"></span>
+  </label>
+
+  <div style="margin: 0.5rem;">
+    <select id="stack-size" onchange="onStackSettingsChange()">
+      <option selected>Alle</option>
+      <option>5</option>
+      <option>10</option>
+      <option>15</option>
+      <option>20</option>
+    </select>
+    <label for="stack-size">Anzahl</label>
+    <input type="checkbox" id="stack-marked-only" onchange="onStackSettingsChange()">Nur markierte</input>
+    <a onclick="if(confirm('Möchtest du wirklich deinen GESAMTEN Fortschritt zurücksetzen???')) { localStorage.clear(); location.reload(); }">
+      Fortschritt zurücksetzen
+    </a>
+  </div>  
+    
+  <div class="card-wrapper">
+    <div class="card-body">
+      <div class="card-front">
+        <p id="flashcard_front">None</p>
+      </div>
+      <div class="card-back">
+        <p id="flashcard_back">None</p>
+        <p id="counts">None</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui-elements">
+    <button id="button_previous" type="button" class="button" style="--color:grey;" onclick="previousFlashcard()">&larr;</button>
+    
+    <button type="button" class="button" style="--color:red;"    onclick="buttonWrong()">Falsch  </button>
+    <button type="button" class="button" style="--color:green;"  onclick="buttonRight()">Richtig </button>
+    
+    <button id="button_skip" type="button" class="button" style="--color:grey;" onclick="nextFlashcard()">&rarr;</button>
+  </div>
+
+  <p style="text-align: center;" id="flashcard-number">None / None</p>
+
+  <audio id="audio-button"  src="/audio/146718__leszek_szary__button.mp3"></audio>
+  <audio id="audio-right"   src="/audio/243701__ertfelda__correct.mp3"></audio>
+  <audio id="audio-wrong"   src="/audio/243700__ertfelda__incorrect.mp3"></audio>
+
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>

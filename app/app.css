@@ -1,0 +1,72 @@
+.ui-elements {
+margin-top: 0.5rem;
+display: flex; 
+flex-direction: row; 
+align-items: center; 
+justify-content: center;
+}
+
+.ui-elements .button {
+width: 5rem;
+margin: 0.25rem;
+
+padding: 0.5rem 0.5rem;
+font-size: 100%;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+--color: red;
+background-color: var(--color);
+border: none;
+border-radius: 8px;
+box-shadow: 0 9px hsl(from var(--color) h s calc(l * 0.6));
+
+float: left;
+}
+
+.button:active {
+background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+box-shadow: 0 5px hsl(from var(--color) h s calc(l * 0.3));
+transform: translateY(4px);
+}
+
+
+
+
+
+
+/*&#9734; &#9733;*/
+
+/* Create a custom checkbox */
+.favourite {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: transparent;
+}
+
+/* Create the favourite/indicator (hidden when not checked) */
+.favourite:after {
+content: "&#9733;";
+}
+
+/* Show the favourite when checked */
+.container input:checked ~ .favourite:after {
+content: "&#9734";
+}
+
+/* Style the favourite/indicator */
+.container .favourite:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: none;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
