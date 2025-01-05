@@ -63,6 +63,8 @@ width: 0;
 
 /* Create a custom checkbox */
 .favourite {
+text-rendering:auto;
+
 position: absolute;
 top: 0;
 left: 0;
