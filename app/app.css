@@ -73,12 +73,12 @@ background-color: transparent;
 
 /* Create the favourite/indicator (hidden when not checked) */
 .favourite:after {
-content: "&#9733;";
+content: "&star;";
 }
 
 /* Show the favourite when checked */
 .container input:checked ~ .favourite:after {
-content: "&#9734";
+content: "&fstar;";
 }
 
 /* Style the favourite/indicator */
