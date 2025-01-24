@@ -500,8 +500,8 @@
          xml:space="preserve"
          transform="matrix(1.3333333,0,0,1.3333333,392.29333,319.86667)"
          clip-path="url(#clipPath28)"><tspan
-           style="font-variant:normal;font-weight:normal;font-size:24px;font-family:Roboto;writing-mode:lr-tb;fill:#cc0066;fill-opacity:1;fill-rule:nonzero;stroke:#cc0066;stroke-width:0.68571;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-           x="0 14.232 27 40.080002 48.192001 60.599998 66.120003"
+           style="font-variant:normal;font-weight:700;font-size:24px;font-family:Roboto;writing-mode:lr-tb;fill:#cc0066;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           x="0 14.76 27.624001 41.063999 49.824001 62.807999 68.783997"
            y="0"
            sodipodi:role="line"
            id="tspan27">Säure 2</tspan></text>
@@ -513,8 +513,8 @@
          xml:space="preserve"
          transform="matrix(1.3333333,0,0,1.3333333,157.28,319.86667)"
          clip-path="url(#clipPath29)"><tspan
-           style="font-variant:normal;font-weight:normal;font-size:24px;font-family:Roboto;writing-mode:lr-tb;fill:#cc0066;fill-opacity:1;fill-rule:nonzero;stroke:#cc0066;stroke-width:0.68571;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-           x="0 14.88 27.719999 39.84 52.32 57.84"
+           style="font-variant:normal;font-weight:700;font-size:24px;font-family:Roboto;writing-mode:lr-tb;fill:#cc0066;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           x="0 15.312 28.176001 40.512001 53.495998 59.616001"
            y="0"
            sodipodi:role="line"
            id="tspan28">Base 1</tspan></text>
@@ -526,8 +526,8 @@
          xml:space="preserve"
          transform="matrix(1.3333333,0,0,1.3333333,865.92,319.86667)"
          clip-path="url(#clipPath30)"><tspan
-           style="font-variant:normal;font-weight:normal;font-size:24px;font-family:Roboto;writing-mode:lr-tb;fill:#cc0066;fill-opacity:1;fill-rule:nonzero;stroke:#cc0066;stroke-width:0.68571;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-           x="0 14.232 27.048 40.152 48.264 60.720001 66.239998"
+           style="font-variant:normal;font-weight:700;font-size:24px;font-family:Roboto;writing-mode:lr-tb;fill:#cc0066;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           x="0 14.76 27.624001 41.063999 49.872002 62.855999 68.832001"
            y="0"
            sodipodi:role="line"
            id="tspan29">Säure 1</tspan></text>
@@ -539,8 +539,8 @@
          xml:space="preserve"
          transform="matrix(1.3333333,0,0,1.3333333,624.54667,319.86667)"
          clip-path="url(#clipPath31)"><tspan
-           style="font-variant:normal;font-weight:normal;font-size:24px;font-family:Roboto;writing-mode:lr-tb;fill:#cc0066;fill-opacity:1;fill-rule:nonzero;stroke:#cc0066;stroke-width:0.68571;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-           x="0 14.88 27.719999 39.84 52.32 57.84"
+           style="font-variant:normal;font-weight:700;font-size:24px;font-family:Roboto;writing-mode:lr-tb;fill:#cc0066;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           x="0 15.312 28.176001 40.512001 53.495998 59.616001"
            y="0"
            sodipodi:role="line"
            id="tspan30">Base 2</tspan></text>
