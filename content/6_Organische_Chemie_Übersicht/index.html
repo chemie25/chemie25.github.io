@@ -730,16 +730,23 @@ th {
   top: 0px;
 }
 
+html, body {
+  height: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
 .table-wrapper {
   border: solid 1px black;
-  height: 100%;
   width: 100%;
   overflow: scroll;
 }
 
 </style>
 <body>
-    <table>
+    <table class="full-height">
     <thead>
         <tr>
             <th>Stoffklasse</th>
