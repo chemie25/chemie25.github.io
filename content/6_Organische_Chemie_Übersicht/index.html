@@ -727,7 +727,6 @@
 <style>
 
 .window {
-  height: 300px;
   width: 100%;
 }
 .table {
@@ -749,9 +748,10 @@
 .cell {
   flex: 0 0 8rem;
   padding: 2px;
+  max-width: 200%
 }
 .body {
-  height: 100%;
+  height: 500px;
   overflow-y: auto;
 }
 </style>
@@ -762,8 +762,8 @@
             <div class="body">
                 <div class="row header">
                     <div class="cell">Stoffklasse</div>
-                    <div class="cell" max-width="50%">Endung</div>
-                    <div class="cell" max-width="200%">Beispiel</div>
+                    <div class="cell">Endung</div>
+                    <div class="cell">Beispiel</div>
                     <div class="cell">Funktionelle Gruppe</div>
                     <div class="cell">Typische Reaktion</div>
                     <div class="cell">Bindungen + Stoffeigenschaften</div>
