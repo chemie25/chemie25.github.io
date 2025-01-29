@@ -46,7 +46,6 @@ function setFlashcardsCounts() {
 
         flashcards_counts_map[id] = count;
     }
-
     localStorage.setItem("flashcards_counts", JSON.stringify(flashcards_counts_map));
 }
 
@@ -126,7 +125,7 @@ function generateStack(max_stack_size, marked_only) {
         // then based on the difference between right and wrong
         const deltaA = a.counts.r - a.counts.w;
         const deltaB = b.counts.r - b.counts.w;
-        return ((deltaA < deltaB) ? -1 : ((deltaA == deltaB) ? 0.5 - Math.random() : 1));
+        return ((deltaA > deltaB) ? -1 : ((deltaA == deltaB) ? 0.5 - Math.random() : 1));
     });
     
     //3) generate the stack
