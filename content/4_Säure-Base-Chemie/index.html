@@ -476,9 +476,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#aufbau" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufbau
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#titrationskurven-auswerten" class="md-nav__link">
     <span class="md-ellipsis">
       Titrationskurven auswerten
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mehrprotonige-sauren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mehrprotonige Säuren
     </span>
   </a>
   
@@ -615,6 +633,48 @@
   
   <span class="md-ellipsis">
     Kunststoffe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../8_Naturstoffchemie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Naturstoffchemie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../9_Nanochemie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nanochemie
   </span>
   
 
@@ -855,9 +915,27 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#aufbau" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aufbau
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#titrationskurven-auswerten" class="md-nav__link">
     <span class="md-ellipsis">
       Titrationskurven auswerten
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mehrprotonige-sauren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mehrprotonige Säuren
     </span>
   </a>
   
@@ -1106,15 +1184,97 @@ pK_S + pK_B = 14
 </div>
 <hr />
 <h2 id="titration">Titration</h2>
+<div class="admonition tip">
+<p class="admonition-title">Titration</p>
+<p>Die <strong>unbekannte Konzentration</strong> einer sauren/alkalischen <strong>Probelösung</strong> wird bestimmt, indem eine starken Base/Säure (<strong>Maßlösung</strong>) mit <strong>bekannter Konzentration</strong> hinzugegeben wird.</p>
+</div>
+<h3 id="aufbau">Aufbau</h3>
 <ul>
-<li>Konzentration einer <strong>Probelösung</strong> bestimmen</li>
+<li><strong>Farbumschlag</strong> des Indikators und <strong>Änderung des pH-Wertes</strong></li>
 </ul>
 <h3 id="titrationskurven-auswerten">Titrationskurven auswerten</h3>
+<div class="admonition info">
+<p class="admonition-title">Äquivalenzpunkt (ÄP)</p>
+<p>Ursprüngliche Stoffmenge der Probelösung und Maßlösung sind <strong>gleich</strong>:
+$$
+\begin{align}
+n(\text{Säure})&amp;=n(\text{Base}) \
+c(\text{Säure}) \cdot V(\text{Säure}) &amp;= c(\text{Base}) \cdot V(\text{Base}) \ \
+\implies c(\text{Säure})&amp;= \frac{c(\text{Base}) \cdot V(\text{Base})}{V(\text{Säure})}
+\end{align}
+$$</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Halbäquivalenzpunkt (HÄP)</p>
+<p>Nur bei schwachen Säuren / Basen, <strong>Hälfte</strong> der Stoffmenge der Probelösung neutralisiert (Formel folgt aus der Henderson-Hasselbach-Gleichung):
+$$
+\begin{align}
+&amp;n(\ce{HA})=n(\ce{A-}) \ \
+&amp;pH=pK_{S}+ \log \frac{c(\ce{A-})}{c(\ce{HA})} \
+&amp;\implies pH=pK_{S}
+\end{align}
+$$</p>
+</div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>starke Säure</th>
+<th>schwache Säure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vor der Zugabe der Maßlösung</td>
+<td><span class="arithmatex">\(pH=-\log \space c_{0}(\ce{HA})\)</span></td>
+<td><span class="arithmatex">\(pH=\frac{1}{2} \cdot (pK_{S}-\log \space c_{0}(\ce{HA}))\)</span></td>
+</tr>
+<tr>
+<td>HÄP</td>
+<td><span class="arithmatex">\(-\)</span></td>
+<td><span class="arithmatex">\(pH=pK_{S}\)</span></td>
+</tr>
+<tr>
+<td>ÄP</td>
+<td>7</td>
+<td><span class="arithmatex">\(pH=14-\frac{1}{2} \cdot (pK_{B}-\log c_{0}(\ce{A-}))\)</span></td>
+</tr>
+<tr>
+<td>Wendepunkte</td>
+<td>Einer; am <strong>Äquivalenzpunkt</strong></td>
+<td>Zwei; am <strong>HÄP</strong> und <strong>ÄP</strong></td>
+</tr>
+<tr>
+<td>Pufferbereich</td>
+<td><span class="arithmatex">\(-\)</span></td>
+<td>um den HÄP <span class="arithmatex">\(pH \approx pK_{S} \pm 1\)</span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>über den ÄP hinaus</th>
+<th>strebt asymptotisch gegen <span class="arithmatex">\(pH=14 + lg \space c(\ce{B})\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="mehrprotonige-sauren">Mehrprotonige Säuren</h3>
+<ul>
+<li>Beispiel: Phosphorsäure <span class="arithmatex">\(\ce{H_{3}PO_{4}}\)</span></li>
+</ul>
+<p><a class="glightbox" href="../../media/Titration_mehrprotonig.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Elektrophile Addition" src="../../media/Titration_mehrprotonig.svg" /></a></p>
 <hr />
 <h2 id="pufferlosungen">Pufferlösungen</h2>
 <ul>
 <li>Konstanter pH-Wert</li>
-<li>Lösungen <strong>schwacher</strong> Säuren / Basen und ihren <strong>korrespondieren</strong> Basen / Säuren</li>
+<li>Lösungen <strong>schwacher</strong> Säuren/Basen und ihren <strong>korrespondieren</strong> Basen/Säuren</li>
 </ul>
 <div class="admonition example">
 <p class="admonition-title">Essigsäure-Acetat-Puffer</p>
