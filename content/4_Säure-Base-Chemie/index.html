@@ -1034,17 +1034,17 @@
 <h2 id="bronstedt">Brönstedt</h2>
 <ul>
 <li>
-<p><strong>Säuren</strong>: Geben Protonen (<span class="arithmatex">\(H^+\)</span>) ab, <strong>Protonendonator</strong></p>
+<p><strong>Säuren</strong>: Geben Protonen (<span class="arithmatex">\(\ce{H+}\)</span>) ab, <strong>Protonendonator</strong></p>
 <ul>
-<li>Leicht abspaltbares <span class="arithmatex">\(H\)</span>-Atom mit positiver Teilladung</li>
+<li>Leicht abspaltbares <span class="arithmatex">\(\ce{H}\)</span>-Atom mit positiver Teilladung</li>
 <li>Nicht zu verwechseln mit saurer Lösung</li>
 </ul>
 </li>
 <li>
 <p><strong>Basen</strong>: Nehmen Protonen auf, <strong>Protonenakzeptor</strong></p>
 <ul>
-<li>Alkalische Lösung (<span class="arithmatex">\(OH^-\)</span>)</li>
-<li>Freies Elektronenpaar, kann <span class="arithmatex">\(H^+\)</span> binden</li>
+<li>Alkalische Lösung (<span class="arithmatex">\(\ce{OH^-}\)</span>)</li>
+<li>Freies Elektronenpaar, kann <span class="arithmatex">\(\ce{H^+}\)</span> binden</li>
 </ul>
 </li>
 <li>
@@ -1074,8 +1074,8 @@ $$</p>
 <p class="admonition-title">pH-Wert</p>
 <div class="arithmatex">\[
 \begin{align*}
-&amp;\text{pH}=-lg \Big(c(H_3O^+) \cdot \frac{l}{mol} \Big) \\
-&amp;\Leftrightarrow c(H_3O^+) = 10^\text{-pH} \cdot \frac{mol}{l}
+&amp;\text{pH}=-lg \Big(c(\ce{H3O+}) \cdot \frac{l}{mol} \Big) \\
+&amp;\Leftrightarrow c(\ce{H3O+})) = 10^\text{-pH} \cdot \frac{mol}{l}
 \end{align*}
 \]</div>
 </div>
@@ -1225,31 +1225,24 @@ $$</p>
 </div>
 <h3 id="aufbau">Aufbau</h3>
 <ul>
+<li>Bürette mit Maßlösung</li>
 <li><strong>Farbumschlag</strong> des Indikators und <strong>Änderung des pH-Wertes</strong></li>
 </ul>
 <h3 id="titrationskurven-auswerten">Titrationskurven auswerten</h3>
-<div class="admonition info">
-<p class="admonition-title">Äquivalenzpunkt (ÄP)</p>
-<p>Ursprüngliche Stoffmenge der Probelösung und Maßlösung sind <strong>gleich</strong>:
-$$
-\begin{align}
-n(\text{Säure})&amp;=n(\text{Base}) \
-c(\text{Säure}) \cdot V(\text{Säure}) &amp;= c(\text{Base}) \cdot V(\text{Base}) \ \
-\implies c(\text{Säure})&amp;= \frac{c(\text{Base}) \cdot V(\text{Base})}{V(\text{Säure})}
-\end{align}
-$$</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Halbäquivalenzpunkt (HÄP)</p>
-<p>Nur bei schwachen Säuren / Basen, <strong>Hälfte</strong> der Stoffmenge der Probelösung neutralisiert (Formel folgt aus der Henderson-Hasselbach-Gleichung):
-$$
-\begin{align}
-&amp;n(\ce{HA})=n(\ce{A-}) \ \
-&amp;pH=pK_{S}+ \log \frac{c(\ce{A-})}{c(\ce{HA})} \
-&amp;\implies pH=pK_{S}
-\end{align}
-$$</p>
-</div>
+<table>
+<thead>
+<tr>
+<th><strong>starke Säure</strong></th>
+<th><strong>schwache Säure</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" href="../../media/media_45.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../media/media_45.svg" /></a></td>
+<td><a class="glightbox" href="../../media/media_46.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../../media/media_46.svg" /></a></td>
+</tr>
+</tbody>
+</table>
 <table>
 <thead>
 <tr>
@@ -1286,6 +1279,28 @@ $$</p>
 </tr>
 </tbody>
 </table>
+<div class="admonition info">
+<p class="admonition-title">Äquivalenzpunkt (ÄP)</p>
+<p>Ursprüngliche Stoffmenge der Probelösung und Maßlösung sind <strong>gleich</strong>:
+$$
+\begin{align}
+n(\text{Säure})&amp;=n(\text{Base}) \
+c(\text{Säure}) \cdot V(\text{Säure}) &amp;= c(\text{Base}) \cdot V(\text{Base}) \ \
+\implies c(\text{Säure})&amp;= \frac{c(\text{Base}) \cdot V(\text{Base})}{V(\text{Säure})}
+\end{align}
+$$</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Halbäquivalenzpunkt (HÄP)</p>
+<p>Nur bei schwachen Säuren / Basen, <strong>Hälfte</strong> der Stoffmenge der Probelösung neutralisiert (Formel folgt aus der Henderson-Hasselbach-Gleichung):
+$$
+\begin{align}
+&amp;n(\ce{HA})=n(\ce{A-}) \ \
+&amp;pH=pK_{S}+ \log \frac{c(\ce{A-})}{c(\ce{HA})} \
+&amp;\implies pH=pK_{S}
+\end{align}
+$$</p>
+</div>
 <h3 id="mehrprotonige-sauren">Mehrprotonige Säuren</h3>
 <ul>
 <li>Beispiel: Phosphorsäure <span class="arithmatex">\(\ce{H_{3}PO_{4}}\)</span></li>
